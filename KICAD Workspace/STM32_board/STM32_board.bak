@@ -93,7 +93,7 @@ U 1 1 5C7C2A1D
 P 10300 1100
 F 0 "J1" H 10273 980 50  0000 R CNN
 F 1 "Power connector" H 10273 1071 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 10300 1100 50  0001 C CNN
+F 2 "Connector_Molex:Molex_SPOX_5267-02A_1x02_P2.50mm_Vertical" H 10300 1100 50  0001 C CNN
 F 3 "~" H 10300 1100 50  0001 C CNN
 	1    10300 1100
 	-1   0    0    1   
@@ -274,21 +274,15 @@ Wire Wire Line
 	10150 2650 9200 2650
 Text Label 9200 2450 0    39   ~ 0
 READ_BATTERY
-Text Label 9200 2550 0    39   ~ 0
-ADC_BATTERY
 Text Label 9200 2650 0    39   ~ 0
+ADC_BATTERY
+Text Label 9200 2550 0    39   ~ 0
 CURRENT_SENSOR
-Wire Wire Line
-	1500 5300 850  5300
-Text Label 850  5300 0    50   ~ 0
+Text Label 750  5300 0    50   ~ 0
 JoystickADC1
-Wire Wire Line
-	1500 5500 850  5500
-Text Label 850  5500 0    50   ~ 0
+Text Label 750  5500 0    50   ~ 0
 JoystickADC2
-Wire Wire Line
-	1500 2100 900  2100
-Text Label 900  2100 0    50   ~ 0
+Text Label 750  2100 0    50   ~ 0
 JoystickButton
 Wire Wire Line
 	3100 4400 3750 4400
@@ -300,9 +294,7 @@ Wire Wire Line
 	3100 5000 3750 5000
 Wire Wire Line
 	3100 5200 3750 5200
-Wire Wire Line
-	1500 4600 850  4600
-Text Label 850  4600 0    50   ~ 0
+Text Label 750  4600 0    50   ~ 0
 LcdD7
 Text Label 3750 4400 0    50   ~ 0
 LcdRS
@@ -326,17 +318,11 @@ Text Label 3450 2200 0    50   ~ 0
 P_BL
 Text Label 3450 2400 0    50   ~ 0
 P_CL
-Wire Wire Line
-	1500 4000 850  4000
-Wire Wire Line
-	1500 4200 850  4200
-Wire Wire Line
-	1500 4400 850  4400
-Text Label 850  4000 0    50   ~ 0
+Text Label 750  4000 0    50   ~ 0
 P_AH
-Text Label 850  4200 0    50   ~ 0
+Text Label 750  4200 0    50   ~ 0
 P_BH
-Text Label 850  4400 0    50   ~ 0
+Text Label 750  4400 0    50   ~ 0
 P_CH
 $Comp
 L Connector:Conn_01x16_Female J4
@@ -623,4 +609,53 @@ Text Label 9750 2850 0    50   ~ 0
 3V3
 Text Label 9750 2950 0    50   ~ 0
 GND
+Text Label 750  2900 0    50   ~ 0
+READ_BATTERY
+Text Label 750  5900 0    50   ~ 0
+ADC_BATTERY
+Text Label 750  6100 0    50   ~ 0
+CURRENT_SENSOR
+Wire Wire Line
+	750  6100 1500 6100
+Wire Wire Line
+	750  5900 1500 5900
+Wire Wire Line
+	750  5300 1500 5300
+Wire Wire Line
+	750  5500 1500 5500
+Wire Wire Line
+	750  4000 1500 4000
+Wire Wire Line
+	750  4200 1500 4200
+Wire Wire Line
+	750  4400 1500 4400
+Wire Wire Line
+	750  4600 1500 4600
+Wire Wire Line
+	750  2900 1500 2900
+Wire Wire Line
+	1500 2100 750  2100
+$Comp
+L Device:R_POT RV?
+U 1 1 5C8864A7
+P 6550 3750
+F 0 "RV?" H 6480 3796 50  0000 R CNN
+F 1 "R_POT" H 6480 3705 50  0000 R CNN
+F 2 "" H 6550 3750 50  0001 C CNN
+F 3 "~" H 6550 3750 50  0001 C CNN
+	1    6550 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3600 6550 3350
+Wire Wire Line
+	6550 3900 6550 4050
+Text Label 6550 3350 1    50   ~ 0
+5V
+Text Label 6550 4050 3    50   ~ 0
+GND
+Wire Wire Line
+	6700 3750 7050 3750
+Text Label 7050 3750 0    50   ~ 0
+V0
 $EndSCHEMATC
