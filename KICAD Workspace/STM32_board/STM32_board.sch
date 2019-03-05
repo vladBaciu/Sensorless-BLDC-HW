@@ -93,7 +93,7 @@ U 1 1 5C7C2A1D
 P 10300 1100
 F 0 "J1" H 10273 980 50  0000 R CNN
 F 1 "Power connector" H 10273 1071 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 10300 1100 50  0001 C CNN
+F 2 "Connector_Molex:Molex_SPOX_5267-02A_1x02_P2.50mm_Vertical" H 10300 1100 50  0001 C CNN
 F 3 "~" H 10300 1100 50  0001 C CNN
 	1    10300 1100
 	-1   0    0    1   
