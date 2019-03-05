@@ -1,0 +1,490 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x02_Female J1
+U 1 1 5C7C727C
+P 8050 1350
+F 0 "J1" H 7944 1025 50  0000 C CNN
+F 1 "36V Battery" H 7944 1116 50  0000 C CNN
+F 2 "" H 8050 1350 50  0001 C CNN
+F 3 "~" H 8050 1350 50  0001 C CNN
+	1    8050 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N5400 D10
+U 1 1 5C7C73BD
+P 1600 1750
+F 0 "D10" H 1600 1534 50  0000 C CNN
+F 1 "1N5061" H 1600 1625 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 1600 1575 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 1600 1750 50  0001 C CNN
+	1    1600 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Regulator_Switching:LM2574HVM-12 U5
+U 1 1 5C7C745D
+P 2800 1850
+F 0 "U5" H 2800 2217 50  0000 C CNN
+F 1 "LM2574HVM-12" H 2800 2126 50  0000 C CNN
+F 2 "Package_SO:SOIC-14W_7.5x9.0mm_P1.27mm" H 2400 2200 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2574.pdf" H 2800 1850 50  0001 C CNN
+	1    2800 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1750 1950 1750
+$Comp
+L Device:CP1 C13
+U 1 1 5C8B2AB4
+P 1950 2000
+F 0 "C13" H 2065 2046 50  0000 L CNN
+F 1 "100uF" H 2065 1955 50  0000 L CNN
+F 2 "" H 1950 2000 50  0001 C CNN
+F 3 "~" H 1950 2000 50  0001 C CNN
+	1    1950 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1850 1950 1750
+Connection ~ 1950 1750
+Wire Wire Line
+	1950 1750 2300 1750
+Wire Wire Line
+	1950 2150 2300 2150
+Wire Wire Line
+	2300 2150 2300 1950
+Connection ~ 1950 2150
+Wire Wire Line
+	2300 2350 2300 2150
+Connection ~ 2300 2150
+$Comp
+L pspice:INDUCTOR L1
+U 1 1 5C8B2CA8
+P 4000 1950
+F 0 "L1" H 4000 2165 50  0000 C CNN
+F 1 "300uH" H 4000 2074 50  0000 C CNN
+F 2 "" H 4000 1950 50  0001 C CNN
+F 3 "~" H 4000 1950 50  0001 C CNN
+	1    4000 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1950 3550 1950
+Wire Wire Line
+	3300 1750 4500 1750
+Wire Wire Line
+	4500 1750 4500 1950
+Wire Wire Line
+	4500 1950 4250 1950
+$Comp
+L Diode:1N5822 D11
+U 1 1 5C8B2FA4
+P 3550 2200
+F 0 "D11" V 3504 2279 50  0000 L CNN
+F 1 "1N5828" V 3595 2279 50  0000 L CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 3550 2025 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 3550 2200 50  0001 C CNN
+	1    3550 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 2050 3550 1950
+Connection ~ 3550 1950
+Wire Wire Line
+	3550 1950 3750 1950
+Wire Wire Line
+	4500 1950 4800 1950
+Connection ~ 4500 1950
+$Comp
+L Device:CP1 C14
+U 1 1 5C8B3408
+P 4800 2150
+F 0 "C14" H 4915 2196 50  0000 L CNN
+F 1 "330uF" H 4915 2105 50  0000 L CNN
+F 2 "" H 4800 2150 50  0001 C CNN
+F 3 "~" H 4800 2150 50  0001 C CNN
+	1    4800 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2000 4800 1950
+Wire Wire Line
+	3550 2350 4800 2350
+Wire Wire Line
+	4800 2350 4800 2300
+Connection ~ 3550 2350
+Wire Wire Line
+	2300 2350 2800 2350
+Wire Wire Line
+	2800 2150 2800 2350
+Connection ~ 2800 2350
+Wire Wire Line
+	2900 2150 2900 2350
+Connection ~ 2900 2350
+Wire Wire Line
+	2900 2350 3550 2350
+$Comp
+L Regulator_Linear:L7805 U6
+U 1 1 5C8B4511
+P 1700 5400
+F 0 "U6" H 1700 5642 50  0000 C CNN
+F 1 "L7805" H 1700 5551 50  0000 C CNN
+F 2 "" H 1725 5250 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 1700 5350 50  0001 C CNN
+	1    1700 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 5400 1200 5400
+Text Label 1050 5400 0    50   ~ 0
+12V
+$Comp
+L Device:CP1 C15
+U 1 1 5C8B494B
+P 1200 5550
+F 0 "C15" H 1315 5596 50  0000 L CNN
+F 1 "CP1" H 1315 5505 50  0000 L CNN
+F 2 "" H 1200 5550 50  0001 C CNN
+F 3 "~" H 1200 5550 50  0001 C CNN
+	1    1200 5550
+	1    0    0    -1  
+$EndComp
+Connection ~ 1200 5400
+Wire Wire Line
+	1200 5400 1400 5400
+Wire Wire Line
+	1200 5700 1700 5700
+Wire Wire Line
+	2000 5400 2100 5400
+$Comp
+L Device:C C16
+U 1 1 5C8B54B8
+P 2100 5550
+F 0 "C16" H 2215 5596 50  0000 L CNN
+F 1 "0.1uF" H 2215 5505 50  0000 L CNN
+F 2 "" H 2138 5400 50  0001 C CNN
+F 3 "~" H 2100 5550 50  0001 C CNN
+	1    2100 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 5700 2100 5700
+Connection ~ 1700 5700
+$Comp
+L power:GNDREF #PWR0109
+U 1 1 5C8B5F9E
+P 1700 5850
+F 0 "#PWR0109" H 1700 5600 50  0001 C CNN
+F 1 "GNDREF" H 1705 5677 50  0000 C CNN
+F 2 "" H 1700 5850 50  0001 C CNN
+F 3 "" H 1700 5850 50  0001 C CNN
+	1    1700 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 5850 1700 5700
+Connection ~ 4800 1950
+Text HLabel 5350 1950 2    50   Input ~ 0
+12V_IR
+Wire Wire Line
+	4800 1950 5350 1950
+Wire Wire Line
+	1450 1750 1250 1750
+Wire Wire Line
+	8250 1250 8450 1250
+Wire Wire Line
+	8250 1350 8400 1350
+Text Label 8600 1250 0    50   ~ 0
+V_BAT+
+Text Label 8600 1350 0    50   ~ 0
+V_BAT-
+Wire Wire Line
+	1250 2150 1950 2150
+Text Label 1250 1750 0    50   ~ 0
+V_BAT+
+Text Label 1250 2150 0    50   ~ 0
+V_BAT-
+Wire Wire Line
+	2850 2350 2900 2350
+Wire Wire Line
+	2800 2350 2850 2350
+Connection ~ 2850 2350
+Wire Wire Line
+	2850 2450 2850 2350
+$Comp
+L power:GNDREF #PWR0101
+U 1 1 5C8B49D7
+P 2850 2450
+F 0 "#PWR0101" H 2850 2200 50  0001 C CNN
+F 1 "GNDREF" H 2855 2277 50  0000 C CNN
+F 2 "" H 2850 2450 50  0001 C CNN
+F 3 "" H 2850 2450 50  0001 C CNN
+	1    2850 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Switching:LM2574HVM-12 U7
+U 1 1 5C8BEE4C
+P 2850 3700
+F 0 "U7" H 2850 4067 50  0000 C CNN
+F 1 "LM2574HVM-12" H 2850 3976 50  0000 C CNN
+F 2 "Package_SO:SOIC-14W_7.5x9.0mm_P1.27mm" H 2450 4050 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2574.pdf" H 2850 3700 50  0001 C CNN
+	1    2850 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C17
+U 1 1 5C8BEE54
+P 2000 3850
+F 0 "C17" H 2115 3896 50  0000 L CNN
+F 1 "100uF" H 2115 3805 50  0000 L CNN
+F 2 "" H 2000 3850 50  0001 C CNN
+F 3 "~" H 2000 3850 50  0001 C CNN
+	1    2000 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 3700 2000 3600
+Connection ~ 2000 3600
+Wire Wire Line
+	2000 3600 2350 3600
+Wire Wire Line
+	2000 4000 2350 4000
+Wire Wire Line
+	2350 4000 2350 3800
+Wire Wire Line
+	2350 4200 2350 4000
+Connection ~ 2350 4000
+$Comp
+L pspice:INDUCTOR L2
+U 1 1 5C8BEE63
+P 4050 3800
+F 0 "L2" H 4050 4015 50  0000 C CNN
+F 1 "300uH" H 4050 3924 50  0000 C CNN
+F 2 "" H 4050 3800 50  0001 C CNN
+F 3 "~" H 4050 3800 50  0001 C CNN
+	1    4050 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 3800 3600 3800
+Wire Wire Line
+	3350 3600 4550 3600
+Wire Wire Line
+	4550 3600 4550 3800
+Wire Wire Line
+	4550 3800 4300 3800
+$Comp
+L Diode:1N5822 D12
+U 1 1 5C8BEE6E
+P 3600 4050
+F 0 "D12" V 3554 4129 50  0000 L CNN
+F 1 "1N5828" V 3645 4129 50  0000 L CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 3600 3875 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 3600 4050 50  0001 C CNN
+	1    3600 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 3900 3600 3800
+Connection ~ 3600 3800
+Wire Wire Line
+	3600 3800 3800 3800
+Wire Wire Line
+	4550 3800 4850 3800
+Connection ~ 4550 3800
+Wire Wire Line
+	4850 3850 4850 3800
+Wire Wire Line
+	4850 3800 5550 3800
+Connection ~ 4850 3800
+Text Label 5550 3800 0    50   ~ 0
+12V
+Text Label 2700 5400 0    50   ~ 0
+5V
+Wire Wire Line
+	2350 4200 2850 4200
+$Comp
+L Device:CP1 C19
+U 1 1 5C8BEE7A
+P 4850 4000
+F 0 "C19" H 4965 4046 50  0000 L CNN
+F 1 "330uF" H 4965 3955 50  0000 L CNN
+F 2 "" H 4850 4000 50  0001 C CNN
+F 3 "~" H 4850 4000 50  0001 C CNN
+	1    4850 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4150 4850 4200
+Wire Wire Line
+	4850 4200 3600 4200
+Connection ~ 3600 4200
+Wire Wire Line
+	2950 4000 2950 4200
+Connection ~ 2950 4200
+Wire Wire Line
+	2950 4200 3600 4200
+Wire Wire Line
+	2850 4000 2850 4200
+Connection ~ 2850 4200
+Wire Wire Line
+	2850 4200 2950 4200
+Wire Wire Line
+	8400 1350 8400 1550
+Connection ~ 8400 1350
+Wire Wire Line
+	8400 1350 8600 1350
+Wire Wire Line
+	8450 1250 8450 1500
+Connection ~ 8450 1250
+Wire Wire Line
+	8450 1250 8600 1250
+Text HLabel 8750 1500 2    50   Input ~ 0
+VBAT+
+Wire Wire Line
+	8450 1500 8750 1500
+Text HLabel 8750 1600 2    50   Input ~ 0
+VBAT-
+Wire Wire Line
+	8700 1550 8700 1600
+Wire Wire Line
+	8700 1600 8750 1600
+Wire Wire Line
+	8400 1550 8700 1550
+Wire Notes Line
+	1000 2700 1000 1250
+Wire Notes Line
+	1000 1250 5750 1250
+Text Notes 1050 1250 0    197  ~ 39
+12V Buck Converter 3A
+Wire Notes Line
+	1000 2700 5750 2700
+Wire Notes Line
+	5750 2700 5750 1250
+Wire Notes Line
+	950  3250 950  4350
+Wire Notes Line
+	950  4350 5900 4350
+Wire Notes Line
+	5900 4350 5900 3250
+Wire Notes Line
+	5900 3250 950  3250
+Wire Wire Line
+	2000 4000 1450 4000
+Connection ~ 2000 4000
+Wire Wire Line
+	1450 3600 2000 3600
+Text Notes 950  3250 0    197  ~ 39
+12V Buck Converter 0.5A
+$Comp
+L Regulator_Linear:LP2950-3.3_TO92 U8
+U 1 1 5C8E858B
+P 4650 5450
+F 0 "U8" H 4650 5692 50  0000 C CNN
+F 1 "LP2950-3.3_TO92" H 4650 5601 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4650 5675 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lp2950-n.pdf" H 4650 5400 50  0001 C CNN
+	1    4650 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR03
+U 1 1 5C8E9BDC
+P 4500 5650
+F 0 "#PWR03" H 4500 5400 50  0001 C CNN
+F 1 "GNDREF" H 4505 5477 50  0000 C CNN
+F 2 "" H 4500 5650 50  0001 C CNN
+F 3 "" H 4500 5650 50  0001 C CNN
+	1    4500 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 5900 4650 5800
+$Comp
+L Device:C C18
+U 1 1 5C8EF265
+P 4100 5650
+F 0 "C18" H 4215 5696 50  0000 L CNN
+F 1 "0.1uF" H 4215 5605 50  0000 L CNN
+F 2 "" H 4138 5500 50  0001 C CNN
+F 3 "~" H 4100 5650 50  0001 C CNN
+	1    4100 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 5800 4650 5800
+Connection ~ 4650 5800
+Wire Wire Line
+	4650 5800 4650 5750
+Wire Wire Line
+	4100 5500 4100 5450
+Wire Wire Line
+	4950 5450 5350 5450
+Wire Wire Line
+	2100 5400 2700 5400
+Connection ~ 2100 5400
+$Comp
+L Device:C C20
+U 1 1 5C8FCAD4
+P 5350 5600
+F 0 "C20" H 5465 5646 50  0000 L CNN
+F 1 "2.2uF" H 5465 5555 50  0000 L CNN
+F 2 "" H 5388 5450 50  0001 C CNN
+F 3 "~" H 5350 5600 50  0001 C CNN
+	1    5350 5600
+	1    0    0    -1  
+$EndComp
+Connection ~ 5350 5450
+Wire Wire Line
+	5350 5450 5700 5450
+Wire Wire Line
+	4650 5800 5350 5800
+Wire Wire Line
+	5350 5800 5350 5750
+Wire Wire Line
+	3900 5450 4100 5450
+Connection ~ 4100 5450
+Wire Wire Line
+	4100 5450 4350 5450
+Text Label 3900 5450 0    50   ~ 0
+5V
+Text Label 5700 5450 0    50   ~ 0
+3v3
+Wire Notes Line
+	850  6200 3100 6200
+Wire Notes Line
+	3100 6200 3100 5000
+Wire Notes Line
+	3100 5000 850  5000
+Wire Notes Line
+	850  5000 850  6200
+Text Notes 850  4950 0    197  ~ 39
+5V output
+Wire Notes Line
+	3600 6150 6250 6150
+Wire Notes Line
+	6250 6150 6250 5100
+Wire Notes Line
+	6250 5100 3600 5100
+Wire Notes Line
+	3600 5100 3600 6150
+Text Notes 3600 5050 0    197  ~ 39
+3v3 output
+$EndSCHEMATC

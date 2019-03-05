@@ -1,0 +1,1031 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R?
+U 1 1 5CB0A2E0
+P 4800 2350
+AR Path="/5CB0A2E0" Ref="R?"  Part="1" 
+AR Path="/5CB00088/5CB0A2E0" Ref="R1"  Part="1" 
+F 0 "R1" V 4593 2350 50  0000 C CNN
+F 1 "22" V 4684 2350 50  0000 C CNN
+F 2 "" V 4730 2350 50  0001 C CNN
+F 3 "~" H 4800 2350 50  0001 C CNN
+	1    4800 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CB0A2E7
+P 4800 2550
+AR Path="/5CB0A2E7" Ref="R?"  Part="1" 
+AR Path="/5CB00088/5CB0A2E7" Ref="R2"  Part="1" 
+F 0 "R2" V 5007 2550 50  0000 C CNN
+F 1 "22" V 4916 2550 50  0000 C CNN
+F 2 "" V 4730 2550 50  0001 C CNN
+F 3 "~" H 4800 2550 50  0001 C CNN
+	1    4800 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Driver_FET:IR2101 U?
+U 1 1 5CB0A2EE
+P 3450 2250
+AR Path="/5CB0A2EE" Ref="U?"  Part="1" 
+AR Path="/5CB00088/5CB0A2EE" Ref="U1"  Part="1" 
+F 0 "U1" H 3450 2817 50  0000 C CNN
+F 1 "IR2101" H 3450 2726 50  0000 C CNN
+F 2 "" H 3450 1800 50  0001 C CIN
+F 3 "https://www.infineon.com/dgdl/ir2101.pdf?fileId=5546d462533600a4015355c7a755166c" H 3250 1700 50  0001 C CNN
+	1    3450 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS FQP85N?
+U 1 1 5CB0A2F5
+P 5600 1850
+AR Path="/5CB0A2F5" Ref="FQP85N?"  Part="1" 
+AR Path="/5CB00088/5CB0A2F5" Ref="FQP85N1"  Part="1" 
+F 0 "FQP85N1" H 5805 1850 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 5805 1805 50  0001 L CNN
+F 2 "" H 5800 1950 50  0001 C CNN
+F 3 "~" H 5600 1850 50  0001 C CNN
+	1    5600 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS FQP85N?
+U 1 1 5CB0A2FC
+P 5600 2550
+AR Path="/5CB0A2FC" Ref="FQP85N?"  Part="1" 
+AR Path="/5CB00088/5CB0A2FC" Ref="FQP85N2"  Part="1" 
+F 0 "FQP85N2" H 5805 2550 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 5805 2505 50  0001 L CNN
+F 2 "" H 5800 2650 50  0001 C CNN
+F 3 "~" H 5600 2550 50  0001 C CNN
+	1    5600 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2550 5050 2550
+Wire Wire Line
+	5700 2350 5700 2250
+$Comp
+L Diode:1N4148 D?
+U 1 1 5CB0A305
+P 4800 2000
+AR Path="/5CB0A305" Ref="D?"  Part="1" 
+AR Path="/5CB00088/5CB0A305" Ref="D4"  Part="1" 
+F 0 "D4" H 4800 2216 50  0000 C CNN
+F 1 "1N4148" H 4800 2125 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4800 1825 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 4800 2000 50  0001 C CNN
+	1    4800 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2350 4950 2350
+Wire Wire Line
+	4650 2000 4450 2000
+Wire Wire Line
+	4450 2000 4450 2350
+Connection ~ 4450 2350
+Wire Wire Line
+	4450 2350 4650 2350
+Wire Wire Line
+	4950 2000 5050 2000
+Wire Wire Line
+	5050 2000 5050 2350
+Wire Wire Line
+	5050 2350 5400 2350
+Wire Wire Line
+	5400 2350 5400 1850
+Connection ~ 5050 2350
+Wire Wire Line
+	4650 2900 4450 2900
+Wire Wire Line
+	4450 2900 4450 2550
+Connection ~ 4450 2550
+Wire Wire Line
+	4450 2550 4650 2550
+Wire Wire Line
+	4950 2900 5050 2900
+Wire Wire Line
+	5050 2900 5050 2550
+Connection ~ 5050 2550
+Wire Wire Line
+	5050 2550 5350 2550
+$Comp
+L Diode:1N4148 D?
+U 1 1 5CB0A31E
+P 4800 2900
+AR Path="/5CB0A31E" Ref="D?"  Part="1" 
+AR Path="/5CB00088/5CB0A31E" Ref="D5"  Part="1" 
+F 0 "D5" H 4800 3116 50  0000 C CNN
+F 1 "1N4148" H 4800 3025 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4800 2725 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 4800 2900 50  0001 C CNN
+	1    4800 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D?
+U 1 1 5CB0A325
+P 3400 1450
+AR Path="/5CB0A325" Ref="D?"  Part="1" 
+AR Path="/5CB00088/5CB0A325" Ref="D1"  Part="1" 
+F 0 "D1" H 3400 1234 50  0000 C CNN
+F 1 "1N4148" H 3400 1325 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3400 1275 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 3400 1450 50  0001 C CNN
+	1    3400 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3750 1950 3850 1950
+Wire Wire Line
+	3850 1950 3850 1450
+Wire Wire Line
+	2850 1950 2850 1450
+Wire Wire Line
+	2850 1450 3250 1450
+Wire Wire Line
+	7100 550  7150 550 
+Wire Wire Line
+	5550 2450 5550 2250
+Wire Wire Line
+	5550 2250 5700 2250
+Connection ~ 5700 2250
+Wire Wire Line
+	5700 2250 5700 2050
+Wire Wire Line
+	3750 2350 4450 2350
+Wire Wire Line
+	3750 2550 4450 2550
+Wire Wire Line
+	4200 1450 4000 1450
+$Comp
+L Device:C C?
+U 1 1 5CB0A338
+P 4200 2050
+AR Path="/5CB0A338" Ref="C?"  Part="1" 
+AR Path="/5CB00088/5CB0A338" Ref="C11"  Part="1" 
+F 0 "C11" H 4315 2096 50  0000 L CNN
+F 1 "100nF" H 4315 2005 50  0000 L CNN
+F 2 "" H 4238 1900 50  0001 C CNN
+F 3 "~" H 4200 2050 50  0001 C CNN
+	1    4200 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 2200 4200 2450
+Wire Wire Line
+	4200 1450 4200 1900
+$Comp
+L Device:R R?
+U 1 1 5CB0A341
+P 4800 4200
+AR Path="/5CB0A341" Ref="R?"  Part="1" 
+AR Path="/5CB00088/5CB0A341" Ref="R3"  Part="1" 
+F 0 "R3" V 4593 4200 50  0000 C CNN
+F 1 "22" V 4684 4200 50  0000 C CNN
+F 2 "" V 4730 4200 50  0001 C CNN
+F 3 "~" H 4800 4200 50  0001 C CNN
+	1    4800 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CB0A348
+P 4800 4400
+AR Path="/5CB0A348" Ref="R?"  Part="1" 
+AR Path="/5CB00088/5CB0A348" Ref="R4"  Part="1" 
+F 0 "R4" V 5007 4400 50  0000 C CNN
+F 1 "22" V 4916 4400 50  0000 C CNN
+F 2 "" V 4730 4400 50  0001 C CNN
+F 3 "~" H 4800 4400 50  0001 C CNN
+	1    4800 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Driver_FET:IR2101 U?
+U 1 1 5CB0A34F
+P 3450 4100
+AR Path="/5CB0A34F" Ref="U?"  Part="1" 
+AR Path="/5CB00088/5CB0A34F" Ref="U2"  Part="1" 
+F 0 "U2" H 3450 4667 50  0000 C CNN
+F 1 "IR2101" H 3450 4576 50  0000 C CNN
+F 2 "" H 3450 3650 50  0001 C CIN
+F 3 "https://www.infineon.com/dgdl/ir2101.pdf?fileId=5546d462533600a4015355c7a755166c" H 3250 3550 50  0001 C CNN
+	1    3450 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS FQP85N?
+U 1 1 5CB0A356
+P 5600 3700
+AR Path="/5CB0A356" Ref="FQP85N?"  Part="1" 
+AR Path="/5CB00088/5CB0A356" Ref="FQP85N3"  Part="1" 
+F 0 "FQP85N3" H 5805 3700 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 5805 3655 50  0001 L CNN
+F 2 "" H 5800 3800 50  0001 C CNN
+F 3 "~" H 5600 3700 50  0001 C CNN
+	1    5600 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS FQP85N?
+U 1 1 5CB0A35D
+P 5600 4400
+AR Path="/5CB0A35D" Ref="FQP85N?"  Part="1" 
+AR Path="/5CB00088/5CB0A35D" Ref="FQP85N4"  Part="1" 
+F 0 "FQP85N4" H 5805 4400 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 5805 4355 50  0001 L CNN
+F 2 "" H 5800 4500 50  0001 C CNN
+F 3 "~" H 5600 4400 50  0001 C CNN
+	1    5600 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 4400 5050 4400
+Wire Wire Line
+	5700 4200 5700 4100
+$Comp
+L Diode:1N4148 D?
+U 1 1 5CB0A366
+P 4800 3850
+AR Path="/5CB0A366" Ref="D?"  Part="1" 
+AR Path="/5CB00088/5CB0A366" Ref="D6"  Part="1" 
+F 0 "D6" H 4800 4066 50  0000 C CNN
+F 1 "1N4148" H 4800 3975 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4800 3675 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 4800 3850 50  0001 C CNN
+	1    4800 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4200 4950 4200
+Wire Wire Line
+	4650 3850 4450 3850
+Wire Wire Line
+	4450 3850 4450 4200
+Connection ~ 4450 4200
+Wire Wire Line
+	4450 4200 4650 4200
+Wire Wire Line
+	4950 3850 5050 3850
+Wire Wire Line
+	5050 3850 5050 4200
+Wire Wire Line
+	5050 4200 5400 4200
+Wire Wire Line
+	5400 4200 5400 3700
+Connection ~ 5050 4200
+Wire Wire Line
+	4650 4750 4450 4750
+Wire Wire Line
+	4450 4750 4450 4400
+Connection ~ 4450 4400
+Wire Wire Line
+	4450 4400 4650 4400
+Wire Wire Line
+	4950 4750 5050 4750
+Wire Wire Line
+	5050 4750 5050 4400
+Connection ~ 5050 4400
+Wire Wire Line
+	5050 4400 5350 4400
+$Comp
+L Diode:1N4148 D?
+U 1 1 5CB0A37F
+P 4800 4750
+AR Path="/5CB0A37F" Ref="D?"  Part="1" 
+AR Path="/5CB00088/5CB0A37F" Ref="D7"  Part="1" 
+F 0 "D7" H 4800 4966 50  0000 C CNN
+F 1 "1N4148" H 4800 4875 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4800 4575 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 4800 4750 50  0001 C CNN
+	1    4800 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D?
+U 1 1 5CB0A386
+P 3400 3300
+AR Path="/5CB0A386" Ref="D?"  Part="1" 
+AR Path="/5CB00088/5CB0A386" Ref="D2"  Part="1" 
+F 0 "D2" H 3400 3084 50  0000 C CNN
+F 1 "1N4148" H 3400 3175 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3400 3125 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 3400 3300 50  0001 C CNN
+	1    3400 3300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3750 3800 3850 3800
+Wire Wire Line
+	3850 3800 3850 3300
+Wire Wire Line
+	3850 3300 3550 3300
+Wire Wire Line
+	3150 3800 2850 3800
+Wire Wire Line
+	2850 3800 2850 3300
+Wire Wire Line
+	2850 3300 3250 3300
+Wire Wire Line
+	5550 4300 5550 4100
+Wire Wire Line
+	5550 4100 5700 4100
+Connection ~ 5700 4100
+Wire Wire Line
+	5700 4100 5700 3900
+Wire Wire Line
+	3750 4200 4450 4200
+Wire Wire Line
+	3750 4400 4450 4400
+Connection ~ 3850 3300
+$Comp
+L Device:C C?
+U 1 1 5CB0A39A
+P 4150 3900
+AR Path="/5CB0A39A" Ref="C?"  Part="1" 
+AR Path="/5CB00088/5CB0A39A" Ref="C10"  Part="1" 
+F 0 "C10" H 4265 3946 50  0000 L CNN
+F 1 "100nF" H 4265 3855 50  0000 L CNN
+F 2 "" H 4188 3750 50  0001 C CNN
+F 3 "~" H 4150 3900 50  0001 C CNN
+	1    4150 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4050 4150 4300
+Wire Wire Line
+	4150 3300 4150 3750
+$Comp
+L Device:R R?
+U 1 1 5CB0A3A3
+P 4800 6200
+AR Path="/5CB0A3A3" Ref="R?"  Part="1" 
+AR Path="/5CB00088/5CB0A3A3" Ref="R5"  Part="1" 
+F 0 "R5" V 4593 6200 50  0000 C CNN
+F 1 "22" V 4684 6200 50  0000 C CNN
+F 2 "" V 4730 6200 50  0001 C CNN
+F 3 "~" H 4800 6200 50  0001 C CNN
+	1    4800 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CB0A3AA
+P 4800 6400
+AR Path="/5CB0A3AA" Ref="R?"  Part="1" 
+AR Path="/5CB00088/5CB0A3AA" Ref="R6"  Part="1" 
+F 0 "R6" V 5007 6400 50  0000 C CNN
+F 1 "22" V 4916 6400 50  0000 C CNN
+F 2 "" V 4730 6400 50  0001 C CNN
+F 3 "~" H 4800 6400 50  0001 C CNN
+	1    4800 6400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Driver_FET:IR2101 U?
+U 1 1 5CB0A3B1
+P 3450 6100
+AR Path="/5CB0A3B1" Ref="U?"  Part="1" 
+AR Path="/5CB00088/5CB0A3B1" Ref="U3"  Part="1" 
+F 0 "U3" H 3450 6667 50  0000 C CNN
+F 1 "IR2101" H 3450 6576 50  0000 C CNN
+F 2 "" H 3450 5650 50  0001 C CIN
+F 3 "https://www.infineon.com/dgdl/ir2101.pdf?fileId=5546d462533600a4015355c7a755166c" H 3250 5550 50  0001 C CNN
+	1    3450 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS FQP85N?
+U 1 1 5CB0A3B8
+P 5600 5700
+AR Path="/5CB0A3B8" Ref="FQP85N?"  Part="1" 
+AR Path="/5CB00088/5CB0A3B8" Ref="FQP85N5"  Part="1" 
+F 0 "FQP85N5" H 5805 5700 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 5805 5655 50  0001 L CNN
+F 2 "" H 5800 5800 50  0001 C CNN
+F 3 "~" H 5600 5700 50  0001 C CNN
+	1    5600 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS FQP85N?
+U 1 1 5CB0A3BF
+P 5600 6400
+AR Path="/5CB0A3BF" Ref="FQP85N?"  Part="1" 
+AR Path="/5CB00088/5CB0A3BF" Ref="FQP85N6"  Part="1" 
+F 0 "FQP85N6" H 5805 6400 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 5805 6355 50  0001 L CNN
+F 2 "" H 5800 6500 50  0001 C CNN
+F 3 "~" H 5600 6400 50  0001 C CNN
+	1    5600 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 6400 5050 6400
+Wire Wire Line
+	5700 6200 5700 6100
+$Comp
+L Diode:1N4148 D?
+U 1 1 5CB0A3C8
+P 4800 5850
+AR Path="/5CB0A3C8" Ref="D?"  Part="1" 
+AR Path="/5CB00088/5CB0A3C8" Ref="D8"  Part="1" 
+F 0 "D8" H 4800 6066 50  0000 C CNN
+F 1 "1N4148" H 4800 5975 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4800 5675 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 4800 5850 50  0001 C CNN
+	1    4800 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 6200 4950 6200
+Wire Wire Line
+	4650 5850 4450 5850
+Wire Wire Line
+	4450 5850 4450 6200
+Connection ~ 4450 6200
+Wire Wire Line
+	4450 6200 4650 6200
+Wire Wire Line
+	4950 5850 5050 5850
+Wire Wire Line
+	5050 5850 5050 6200
+Wire Wire Line
+	5050 6200 5400 6200
+Wire Wire Line
+	5400 6200 5400 5700
+Connection ~ 5050 6200
+Wire Wire Line
+	4650 6750 4450 6750
+Wire Wire Line
+	4450 6750 4450 6400
+Connection ~ 4450 6400
+Wire Wire Line
+	4450 6400 4650 6400
+Wire Wire Line
+	4950 6750 5050 6750
+Wire Wire Line
+	5050 6750 5050 6400
+Connection ~ 5050 6400
+Wire Wire Line
+	5050 6400 5300 6400
+$Comp
+L Diode:1N4148 D?
+U 1 1 5CB0A3E1
+P 4800 6750
+AR Path="/5CB0A3E1" Ref="D?"  Part="1" 
+AR Path="/5CB00088/5CB0A3E1" Ref="D9"  Part="1" 
+F 0 "D9" H 4800 6966 50  0000 C CNN
+F 1 "1N4148" H 4800 6875 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4800 6575 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 4800 6750 50  0001 C CNN
+	1    4800 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D?
+U 1 1 5CB0A3E8
+P 3400 5300
+AR Path="/5CB0A3E8" Ref="D?"  Part="1" 
+AR Path="/5CB00088/5CB0A3E8" Ref="D3"  Part="1" 
+F 0 "D3" H 3400 5084 50  0000 C CNN
+F 1 "1N4148" H 3400 5175 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3400 5125 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 3400 5300 50  0001 C CNN
+	1    3400 5300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3750 5800 3850 5800
+Wire Wire Line
+	3850 5800 3850 5300
+Wire Wire Line
+	3850 5300 3550 5300
+Wire Wire Line
+	2850 5800 2850 5300
+Wire Wire Line
+	2850 5300 3250 5300
+Wire Wire Line
+	5550 6300 5550 6100
+Wire Wire Line
+	5550 6100 5700 6100
+Connection ~ 5700 6100
+Wire Wire Line
+	5700 6100 5700 5900
+Wire Wire Line
+	3750 6200 4450 6200
+Wire Wire Line
+	3750 6400 4450 6400
+Connection ~ 3850 5300
+$Comp
+L Device:C C?
+U 1 1 5CB0A404
+P 4200 5900
+AR Path="/5CB0A404" Ref="C?"  Part="1" 
+AR Path="/5CB00088/5CB0A404" Ref="C12"  Part="1" 
+F 0 "C12" H 4315 5946 50  0000 L CNN
+F 1 "100nF" H 4315 5855 50  0000 L CNN
+F 2 "" H 4238 5750 50  0001 C CNN
+F 3 "~" H 4200 5900 50  0001 C CNN
+	1    4200 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 6050 4200 6300
+Wire Wire Line
+	4200 5300 4200 5750
+Wire Wire Line
+	5700 3500 5700 3350
+Wire Wire Line
+	5700 5500 5700 5350
+Wire Wire Line
+	2750 4200 3150 4200
+Wire Wire Line
+	3150 4300 2750 4300
+Wire Wire Line
+	5700 6600 5700 6800
+Text Label 5700 6950 0    79   ~ 0
+CP
+Text Label 5700 4950 0    79   ~ 0
+CP
+Text Label 5700 3000 0    79   ~ 0
+CP
+Wire Notes Line
+	1350 750  6750 750 
+Wire Notes Line
+	6750 750  6750 7400
+Wire Notes Line
+	6750 7400 1350 7400
+Wire Notes Line
+	1350 7400 1350 750 
+Text Notes 1350 700  0    157  ~ 31
+Three phase inverter 
+Wire Wire Line
+	5700 1650 5700 1250
+Text Label 5700 1250 0    79   ~ 0
+Vbatt
+Text Label 5700 3350 0    79   ~ 0
+Vbatt
+Text Label 5700 5350 0    79   ~ 0
+Vbatt
+Wire Wire Line
+	3150 5800 2850 5800
+Wire Wire Line
+	3150 6300 2750 6300
+Wire Wire Line
+	3150 1950 2850 1950
+Wire Wire Line
+	3150 6200 2750 6200
+$Comp
+L power:+BATT #PWR?
+U 1 1 5CB0A42E
+P 5700 1250
+AR Path="/5CB0A42E" Ref="#PWR?"  Part="1" 
+AR Path="/5CB00088/5CB0A42E" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 5700 1100 50  0001 C CNN
+F 1 "+BATT" H 5715 1423 50  0000 C CNN
+F 2 "" H 5700 1250 50  0001 C CNN
+F 3 "" H 5700 1250 50  0001 C CNN
+	1    5700 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5CB0A434
+P 5700 3350
+AR Path="/5CB0A434" Ref="#PWR?"  Part="1" 
+AR Path="/5CB00088/5CB0A434" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 5700 3200 50  0001 C CNN
+F 1 "+BATT" H 5715 3523 50  0000 C CNN
+F 2 "" H 5700 3350 50  0001 C CNN
+F 3 "" H 5700 3350 50  0001 C CNN
+	1    5700 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5CB0A43A
+P 5700 5350
+AR Path="/5CB0A43A" Ref="#PWR?"  Part="1" 
+AR Path="/5CB00088/5CB0A43A" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 5700 5200 50  0001 C CNN
+F 1 "+BATT" H 5715 5523 50  0000 C CNN
+F 2 "" H 5700 5350 50  0001 C CNN
+F 3 "" H 5700 5350 50  0001 C CNN
+	1    5700 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CB0A440
+P 5300 6650
+AR Path="/5CB0A440" Ref="R?"  Part="1" 
+AR Path="/5CB00088/5CB0A440" Ref="R7"  Part="1" 
+F 0 "R7" H 5370 6696 50  0000 L CNN
+F 1 "150k" H 5370 6605 50  0000 L CNN
+F 2 "" V 5230 6650 50  0001 C CNN
+F 3 "~" H 5300 6650 50  0001 C CNN
+	1    5300 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 6800 5700 6800
+Connection ~ 5700 6800
+Wire Wire Line
+	5700 6800 5700 6950
+Wire Wire Line
+	5300 6500 5300 6400
+Connection ~ 5300 6400
+Wire Wire Line
+	5300 6400 5400 6400
+$Comp
+L Device:R R?
+U 1 1 5CB0A44D
+P 5350 4650
+AR Path="/5CB0A44D" Ref="R?"  Part="1" 
+AR Path="/5CB00088/5CB0A44D" Ref="R9"  Part="1" 
+F 0 "R9" H 5420 4696 50  0000 L CNN
+F 1 "150k" H 5420 4605 50  0000 L CNN
+F 2 "" V 5280 4650 50  0001 C CNN
+F 3 "~" H 5350 4650 50  0001 C CNN
+	1    5350 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 4500 5350 4400
+Connection ~ 5350 4400
+Wire Wire Line
+	5350 4400 5400 4400
+Wire Wire Line
+	5350 4800 5700 4800
+Wire Wire Line
+	5700 4600 5700 4800
+Connection ~ 5700 4800
+Wire Wire Line
+	5700 4800 5700 4950
+$Comp
+L Device:R R?
+U 1 1 5CB0A45B
+P 5350 2800
+AR Path="/5CB0A45B" Ref="R?"  Part="1" 
+AR Path="/5CB00088/5CB0A45B" Ref="R8"  Part="1" 
+F 0 "R8" H 5420 2846 50  0000 L CNN
+F 1 "150k" H 5420 2755 50  0000 L CNN
+F 2 "" V 5280 2800 50  0001 C CNN
+F 3 "~" H 5350 2800 50  0001 C CNN
+	1    5350 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2650 5350 2550
+Connection ~ 5350 2550
+Wire Wire Line
+	5350 2550 5400 2550
+Wire Wire Line
+	5350 2950 5700 2950
+Wire Wire Line
+	5700 2750 5700 2950
+Connection ~ 5700 2950
+Wire Wire Line
+	5700 2950 5700 3000
+Wire Wire Line
+	4000 2200 4000 2450
+Connection ~ 4200 2450
+Wire Wire Line
+	4200 2450 5550 2450
+Connection ~ 3850 1450
+Wire Wire Line
+	3850 1450 3550 1450
+Connection ~ 4000 2450
+Wire Wire Line
+	4000 2450 4200 2450
+Wire Wire Line
+	3750 2450 4000 2450
+$Comp
+L Device:C C?
+U 1 1 5CB0A472
+P 4000 2050
+AR Path="/5CB0A472" Ref="C?"  Part="1" 
+AR Path="/5CB00088/5CB0A472" Ref="C8"  Part="1" 
+F 0 "C8" H 3885 2006 50  0000 R CNN
+F 1 "10uF" H 3885 2095 47  0000 R CNN
+F 2 "" H 4038 1900 50  0001 C CNN
+F 3 "~" H 4000 2050 50  0001 C CNN
+	1    4000 2050
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4000 1900 4000 1450
+Connection ~ 4000 1450
+Wire Wire Line
+	3850 1450 4000 1450
+Wire Wire Line
+	3850 3300 3950 3300
+Connection ~ 4150 4300
+Wire Wire Line
+	4150 4300 5550 4300
+Wire Wire Line
+	3750 4300 3950 4300
+$Comp
+L Device:C C?
+U 1 1 5CB0A480
+P 3950 3900
+AR Path="/5CB0A480" Ref="C?"  Part="1" 
+AR Path="/5CB00088/5CB0A480" Ref="C7"  Part="1" 
+F 0 "C7" H 3836 3854 50  0000 R CNN
+F 1 "10uF" H 3836 3945 50  0000 R CNN
+F 2 "" H 3988 3750 50  0001 C CNN
+F 3 "~" H 3950 3900 50  0001 C CNN
+	1    3950 3900
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3950 3750 3950 3300
+Connection ~ 3950 3300
+Wire Wire Line
+	3950 3300 4150 3300
+Wire Wire Line
+	3950 4050 3950 4300
+Connection ~ 3950 4300
+Wire Wire Line
+	3950 4300 4150 4300
+Connection ~ 4200 6300
+Wire Wire Line
+	4200 6300 5550 6300
+Wire Wire Line
+	3750 6300 4000 6300
+Wire Wire Line
+	3850 5300 4000 5300
+$Comp
+L Device:C C?
+U 1 1 5CB0A491
+P 4000 5900
+AR Path="/5CB0A491" Ref="C?"  Part="1" 
+AR Path="/5CB00088/5CB0A491" Ref="C9"  Part="1" 
+F 0 "C9" H 3886 5854 50  0000 R CNN
+F 1 "10uF" H 3886 5945 50  0000 R CNN
+F 2 "" H 4038 5750 50  0001 C CNN
+F 3 "~" H 4000 5900 50  0001 C CNN
+	1    4000 5900
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4000 5750 4000 5300
+Connection ~ 4000 5300
+Wire Wire Line
+	4000 5300 4200 5300
+Wire Wire Line
+	4000 6050 4000 6300
+Connection ~ 4000 6300
+Wire Wire Line
+	4000 6300 4200 6300
+$Comp
+L Device:C C?
+U 1 1 5CB0A4AC
+P 2300 4100
+AR Path="/5CB0A4AC" Ref="C?"  Part="1" 
+AR Path="/5CB00088/5CB0A4AC" Ref="C5"  Part="1" 
+F 0 "C5" H 2415 4146 50  0000 L CNN
+F 1 "100nF" H 2415 4055 50  0000 L CNN
+F 2 "" H 2338 3950 50  0001 C CNN
+F 3 "~" H 2300 4100 50  0001 C CNN
+	1    2300 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3800 2300 3950
+Wire Wire Line
+	2300 4250 2300 4400
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5CB0A4B5
+P 1600 4600
+AR Path="/5CB0A4B5" Ref="#PWR?"  Part="1" 
+AR Path="/5CB00088/5CB0A4B5" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 1600 4350 50  0001 C CNN
+F 1 "GNDREF" H 1605 4427 50  0000 C CNN
+F 2 "" H 1600 4600 50  0001 C CNN
+F 3 "" H 1600 4600 50  0001 C CNN
+	1    1600 4600
+	1    0    0    -1  
+$EndComp
+Connection ~ 2850 3800
+Text HLabel 2850 2350 0    50   Input ~ 0
+HIN_1
+Text HLabel 2850 2450 0    50   Input ~ 0
+LIN_1
+Text HLabel 2750 4200 0    50   Input ~ 0
+HIN_2
+Text HLabel 2750 4300 0    50   Input ~ 0
+LIN_2
+Text HLabel 2750 6200 0    50   Input ~ 0
+HIN_3
+Text HLabel 2750 6300 0    50   Input ~ 0
+LIN_3
+Text HLabel 1750 3800 0    50   Input ~ 0
+12V_IN
+Text HLabel 6250 2250 2    50   Input ~ 0
+PHASE_A
+Text HLabel 6250 4100 2    50   Input ~ 0
+PHASE_B
+Text HLabel 6250 6100 2    50   Input ~ 0
+PHASE_C
+Wire Wire Line
+	5700 2250 6250 2250
+Wire Wire Line
+	5700 4100 6250 4100
+Wire Wire Line
+	5700 6100 6250 6100
+Wire Wire Line
+	1600 4400 1600 4600
+Wire Wire Line
+	3150 2350 2850 2350
+Wire Wire Line
+	2850 2450 3150 2450
+Text HLabel 6250 7250 2    50   Input ~ 0
+CP_OUT
+Wire Wire Line
+	6250 7250 5650 7250
+Text Label 5650 7250 2    50   ~ 0
+CP
+Wire Wire Line
+	1600 4400 1950 4400
+$Comp
+L Device:CP1 C2
+U 1 1 5C8428F9
+P 1950 4100
+F 0 "C2" H 2065 4146 50  0000 L CNN
+F 1 "10uF" H 2065 4055 50  0000 L CNN
+F 2 "" H 1950 4100 50  0001 C CNN
+F 3 "~" H 1950 4100 50  0001 C CNN
+	1    1950 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 4250 1950 4400
+Connection ~ 1950 4400
+Wire Wire Line
+	1750 3800 1950 3800
+Wire Wire Line
+	1950 3950 1950 3800
+Connection ~ 1950 3800
+Connection ~ 2300 3800
+Wire Wire Line
+	2300 3800 2850 3800
+Wire Wire Line
+	1950 3800 2300 3800
+Connection ~ 2300 4400
+Wire Wire Line
+	2300 4400 3150 4400
+Wire Wire Line
+	1950 4400 2300 4400
+$Comp
+L Device:C C?
+U 1 1 5C890560
+P 2300 2250
+AR Path="/5C890560" Ref="C?"  Part="1" 
+AR Path="/5CB00088/5C890560" Ref="C4"  Part="1" 
+F 0 "C4" H 2415 2296 50  0000 L CNN
+F 1 "100nF" H 2415 2205 50  0000 L CNN
+F 2 "" H 2338 2100 50  0001 C CNN
+F 3 "~" H 2300 2250 50  0001 C CNN
+	1    2300 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1950 2300 2100
+Wire Wire Line
+	2300 2400 2300 2550
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5C890569
+P 1600 2750
+AR Path="/5C890569" Ref="#PWR?"  Part="1" 
+AR Path="/5CB00088/5C890569" Ref="#PWR01"  Part="1" 
+F 0 "#PWR01" H 1600 2500 50  0001 C CNN
+F 1 "GNDREF" H 1605 2577 50  0000 C CNN
+F 2 "" H 1600 2750 50  0001 C CNN
+F 3 "" H 1600 2750 50  0001 C CNN
+	1    1600 2750
+	1    0    0    -1  
+$EndComp
+Text HLabel 1750 1950 0    50   Input ~ 0
+12V_IN
+Wire Wire Line
+	1600 2550 1600 2750
+Wire Wire Line
+	1600 2550 1950 2550
+$Comp
+L Device:CP1 C1
+U 1 1 5C890572
+P 1950 2250
+F 0 "C1" H 2065 2296 50  0000 L CNN
+F 1 "10uF" H 2065 2205 50  0000 L CNN
+F 2 "" H 1950 2250 50  0001 C CNN
+F 3 "~" H 1950 2250 50  0001 C CNN
+	1    1950 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 2400 1950 2550
+Connection ~ 1950 2550
+Wire Wire Line
+	1750 1950 1950 1950
+Wire Wire Line
+	1950 2100 1950 1950
+Connection ~ 1950 1950
+Connection ~ 2300 1950
+Wire Wire Line
+	2300 1950 2850 1950
+Wire Wire Line
+	1950 1950 2300 1950
+Connection ~ 2300 2550
+Wire Wire Line
+	2300 2550 3150 2550
+Wire Wire Line
+	1950 2550 2300 2550
+$Comp
+L Device:C C?
+U 1 1 5C8A92B5
+P 2300 6100
+AR Path="/5C8A92B5" Ref="C?"  Part="1" 
+AR Path="/5CB00088/5C8A92B5" Ref="C6"  Part="1" 
+F 0 "C6" H 2415 6146 50  0000 L CNN
+F 1 "100nF" H 2415 6055 50  0000 L CNN
+F 2 "" H 2338 5950 50  0001 C CNN
+F 3 "~" H 2300 6100 50  0001 C CNN
+	1    2300 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 5800 2300 5950
+Wire Wire Line
+	2300 6250 2300 6400
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5C8A92BE
+P 1600 6600
+AR Path="/5C8A92BE" Ref="#PWR?"  Part="1" 
+AR Path="/5CB00088/5C8A92BE" Ref="#PWR02"  Part="1" 
+F 0 "#PWR02" H 1600 6350 50  0001 C CNN
+F 1 "GNDREF" H 1605 6427 50  0000 C CNN
+F 2 "" H 1600 6600 50  0001 C CNN
+F 3 "" H 1600 6600 50  0001 C CNN
+	1    1600 6600
+	1    0    0    -1  
+$EndComp
+Text HLabel 1750 5800 0    50   Input ~ 0
+12V_IN
+Wire Wire Line
+	1600 6400 1600 6600
+Wire Wire Line
+	1600 6400 1950 6400
+$Comp
+L Device:CP1 C3
+U 1 1 5C8A92C7
+P 1950 6100
+F 0 "C3" H 2065 6146 50  0000 L CNN
+F 1 "10uF" H 2065 6055 50  0000 L CNN
+F 2 "" H 1950 6100 50  0001 C CNN
+F 3 "~" H 1950 6100 50  0001 C CNN
+	1    1950 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 6250 1950 6400
+Connection ~ 1950 6400
+Wire Wire Line
+	1750 5800 1950 5800
+Wire Wire Line
+	1950 5950 1950 5800
+Connection ~ 1950 5800
+Connection ~ 2300 5800
+Wire Wire Line
+	2300 5800 2850 5800
+Wire Wire Line
+	1950 5800 2300 5800
+Connection ~ 2300 6400
+Wire Wire Line
+	2300 6400 3150 6400
+Wire Wire Line
+	1950 6400 2300 6400
+$EndSCHEMATC

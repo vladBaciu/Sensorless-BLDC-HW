@@ -1,0 +1,42 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# CD4050BE
+#
+DEF CD4050BE U 0 40 Y Y 1 L N
+F0 "U" -198 797 50 H V L BNN
+F1 "CD4050BE" -144 -1079 50 H V L BNN
+F2 "DIP254P762X508-16" 0 0 50 H I L BNN
+F3 "Texas Instruments" 0 0 50 H I L BNN
+F4 "DIP-16 Intersil" 0 0 50 H I L BNN
+F5 "" 0 0 50 H I L BNN
+F6 "CD4050BE" 0 0 50 H I L BNN
+F7 "None" 0 0 50 H I L BNN
+F8 "Unavailable" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 16 -500 700 -500 -900 N
+P 2 0 0 16 -500 -900 500 -900 N
+P 2 0 0 16 500 -900 500 700 N
+P 2 0 0 16 500 700 -500 700 N
+X VCC 1 -700 500 200 R 40 40 0 0 W 
+X A 3 -700 300 200 R 40 40 0 0 I 
+X B 5 -700 200 200 R 40 40 0 0 I 
+X C 7 -700 100 200 R 40 40 0 0 I 
+X D 9 -700 0 200 R 40 40 0 0 I 
+X E 11 -700 -100 200 R 40 40 0 0 I 
+X F 14 -700 -200 200 R 40 40 0 0 I 
+X NC_2 13 -700 -400 200 R 40 40 0 0 N 
+X NC 16 -700 -500 200 R 40 40 0 0 N 
+X VSS 8 -700 -700 200 R 40 40 0 0 W 
+X G_=_A 2 700 500 200 L 40 40 0 0 O 
+X H_=_B 4 700 400 200 L 40 40 0 0 O 
+X I_=_C 6 700 300 200 L 40 40 0 0 O 
+X J_=_D 10 700 200 200 L 40 40 0 0 O 
+X K_=_E 12 700 100 200 L 40 40 0 0 O 
+X L_=_F 15 700 0 200 L 40 40 0 0 O 
+ENDDRAW
+ENDDEF
+#
+# End Library
