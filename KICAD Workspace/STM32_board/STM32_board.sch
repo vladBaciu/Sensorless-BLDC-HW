@@ -141,7 +141,7 @@ U 1 1 5C7C3516
 P 10050 4500
 F 0 "C2" H 10165 4546 50  0000 L CNN
 F 1 "C" H 10165 4455 50  0000 L CNN
-F 2 "" H 10088 4350 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 10088 4350 50  0001 C CNN
 F 3 "~" H 10050 4500 50  0001 C CNN
 	1    10050 4500
 	1    0    0    -1  
@@ -166,30 +166,12 @@ F 3 "http://www.ti.com/lit/ds/symlink/lp2950-n.pdf" H 9500 5350 50  0001 C CNN
 	1    9500 5400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9200 5400 9050 5400
 Text Label 8800 5400 0    50   ~ 0
 5V
 Wire Wire Line
 	9500 5700 9500 5850
 Text Label 9500 6000 0    50   ~ 0
 GND
-$Comp
-L Device:C C3
-U 1 1 5C7C47F5
-P 9050 5700
-F 0 "C3" H 9165 5746 50  0000 L CNN
-F 1 "C" H 9165 5655 50  0000 L CNN
-F 2 "" H 9088 5550 50  0001 C CNN
-F 3 "~" H 9050 5700 50  0001 C CNN
-	1    9050 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9050 5550 9050 5400
-Connection ~ 9050 5400
-Wire Wire Line
-	9050 5400 8800 5400
 Wire Wire Line
 	9050 5850 9500 5850
 Connection ~ 9500 5850
@@ -200,8 +182,8 @@ L Device:C C4
 U 1 1 5C7C511A
 P 10050 5650
 F 0 "C4" H 10165 5696 50  0000 L CNN
-F 1 "C" H 10165 5605 50  0000 L CNN
-F 2 "" H 10088 5500 50  0001 C CNN
+F 1 "C4" H 10165 5605 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 10088 5500 50  0001 C CNN
 F 3 "~" H 10050 5650 50  0001 C CNN
 	1    10050 5650
 	1    0    0    -1  
@@ -278,11 +260,11 @@ Text Label 9200 2650 0    39   ~ 0
 ADC_BATTERY
 Text Label 9200 2550 0    39   ~ 0
 CURRENT_SENSOR
-Text Label 750  5300 0    50   ~ 0
+Text Label 750  5200 0    50   ~ 0
 JoystickADC1
-Text Label 750  5500 0    50   ~ 0
+Text Label 750  5400 0    50   ~ 0
 JoystickADC2
-Text Label 750  2100 0    50   ~ 0
+Text Label 750  2200 0    50   ~ 0
 JoystickButton
 Wire Wire Line
 	3100 4400 3750 4400
@@ -620,10 +602,6 @@ Wire Wire Line
 Wire Wire Line
 	750  5900 1500 5900
 Wire Wire Line
-	750  5300 1500 5300
-Wire Wire Line
-	750  5500 1500 5500
-Wire Wire Line
 	750  4000 1500 4000
 Wire Wire Line
 	750  4200 1500 4200
@@ -633,15 +611,13 @@ Wire Wire Line
 	750  4600 1500 4600
 Wire Wire Line
 	750  2900 1500 2900
-Wire Wire Line
-	1500 2100 750  2100
 $Comp
 L Device:R_POT RV1
 U 1 1 5C8864A7
 P 6550 3750
 F 0 "RV1" H 6480 3796 50  0000 R CNN
 F 1 "R_POT" H 6480 3705 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Vishay_248GJ-249GJ_Single_Horizontal" H 6550 3750 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK163_Single_Horizontal" H 6550 3750 50  0001 C CNN
 F 3 "~" H 6550 3750 50  0001 C CNN
 	1    6550 3750
 	1    0    0    -1  
@@ -683,4 +659,34 @@ Wire Wire Line
 	8750 3000 8200 3000
 Wire Wire Line
 	8750 2900 8200 2900
+Wire Wire Line
+	750  2200 1500 2200
+Wire Wire Line
+	750  5400 1500 5400
+Wire Wire Line
+	1500 5200 750  5200
+Text Label 8200 2900 0    50   ~ 0
+JoystickButton
+Text Label 8200 3100 0    50   ~ 0
+JoystickADC1
+Text Label 8200 3000 0    50   ~ 0
+JoystickADC2
+Wire Wire Line
+	9050 5400 8800 5400
+Wire Wire Line
+	9200 5400 9050 5400
+Connection ~ 9050 5400
+Wire Wire Line
+	9050 5550 9050 5400
+$Comp
+L Device:C C3
+U 1 1 5C7C47F5
+P 9050 5700
+F 0 "C3" H 9165 5746 50  0000 L CNN
+F 1 "C3" H 9165 5655 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 9088 5550 50  0001 C CNN
+F 3 "~" H 9050 5700 50  0001 C CNN
+	1    9050 5700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
