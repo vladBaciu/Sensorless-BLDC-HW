@@ -790,11 +790,11 @@ F 3 "~" H 10350 2550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1500 2600 700  2600
-Text Label 700  2600 0    39   ~ 0
+Text Label 750  5600 0    39   ~ 0
 ADC_BATTERY
 Wire Wire Line
 	1500 5600 750  5600
-Text Label 750  5600 0    50   ~ 0
+Text Label 700  2600 0    50   ~ 0
 CURRENT_SENSOR
 Wire Wire Line
 	1500 3500 750  3500
