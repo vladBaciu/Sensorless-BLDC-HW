@@ -689,4 +689,108 @@ F 3 "~" H 9050 5700 50  0001 C CNN
 	1    9050 5700
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Conn_01x07_Female J8
+U 1 1 5C87FF0E
+P 6000 6500
+F 0 "J8" H 6027 6526 50  0000 L CNN
+F 1 "External Pins" H 6027 6435 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 6000 6500 50  0001 C CNN
+F 3 "~" H 6000 6500 50  0001 C CNN
+	1    6000 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 6200 5050 6200
+Wire Wire Line
+	5800 6300 5050 6300
+Wire Wire Line
+	5800 6400 5050 6400
+Wire Wire Line
+	5800 6500 5050 6500
+Wire Wire Line
+	5800 6600 5050 6600
+Wire Wire Line
+	5800 6700 5050 6700
+Wire Wire Line
+	5800 6800 5050 6800
+Wire Wire Line
+	1500 2600 700  2600
+Text Label 700  2600 0    50   ~ 0
+EXT_1
+Text Label 5050 6200 0    50   ~ 0
+EXT_1
+Wire Wire Line
+	1500 5600 750  5600
+Text Label 750  5600 0    50   ~ 0
+EXT_2
+Text Label 5050 6300 0    50   ~ 0
+EXT_2
+Text Label 5050 6400 0    50   ~ 0
+EXT_3
+Text Label 5050 6500 0    50   ~ 0
+EXT_4
+Text Label 5050 6600 0    50   ~ 0
+EXT_5
+Text Label 5050 6700 0    50   ~ 0
+EXT_6
+Text Label 5050 6800 0    50   ~ 0
+EXT_7
+Wire Wire Line
+	1500 3500 750  3500
+Text Label 750  3500 0    50   ~ 0
+EXT_3
+Wire Wire Line
+	1500 3700 750  3700
+Text Label 750  3700 0    50   ~ 0
+EXT_4
+Wire Wire Line
+	3100 4500 3750 4500
+Text Label 3750 4500 0    50   ~ 0
+EXT_5
+Wire Wire Line
+	3100 4700 3750 4700
+Text Label 3750 4700 0    50   ~ 0
+EXT_6
+Wire Wire Line
+	3100 4900 3750 4900
+Text Label 3750 4900 0    50   ~ 0
+EXT_7
+$Comp
+L Connector:Conn_01x06_Female J9
+U 1 1 5C8E1B7B
+P 5850 7300
+F 0 "J9" H 5878 7276 50  0000 L CNN
+F 1 "UART module" H 5878 7185 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 5850 7300 50  0001 C CNN
+F 3 "~" H 5850 7300 50  0001 C CNN
+	1    5850 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 6200 750  6200
+Wire Wire Line
+	1500 6300 750  6300
+Text Label 750  6200 0    50   ~ 0
+UART1_TX
+Text Label 750  6300 0    50   ~ 0
+UART2_RX
+Wire Wire Line
+	5650 7100 5100 7100
+Wire Wire Line
+	5650 7200 5100 7200
+Wire Wire Line
+	5650 7300 5100 7300
+Wire Wire Line
+	5650 7400 5100 7400
+Wire Wire Line
+	5650 7500 5100 7500
+Text Label 5100 7300 0    50   ~ 0
+UART1_TX
+Text Label 5100 7200 0    50   ~ 0
+UART2_RX
+Text Label 5100 7600 0    50   ~ 0
+GND
+Wire Wire Line
+	5650 7600 5100 7600
 $EndSCHEMATC
