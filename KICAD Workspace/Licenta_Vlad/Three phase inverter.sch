@@ -1012,8 +1012,6 @@ PHASE_B
 Text Label 13450 2100 1    50   ~ 0
 PHASE_A
 Wire Wire Line
-	14350 2550 14350 2100
-Wire Wire Line
 	13900 2600 13900 2100
 Wire Wire Line
 	13450 2600 13450 2100
@@ -1247,8 +1245,6 @@ F 3 "" H 3250 7400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2700 7300 3000 7300
-Wire Wire Line
-	2700 7300 2700 7250
 Connection ~ 2700 7300
 Wire Wire Line
 	2700 7300 2700 7550
@@ -1315,20 +1311,6 @@ Wire Wire Line
 	2300 7950 2150 7950
 Wire Wire Line
 	2300 7750 2150 7750
-$Comp
-L power:+5V #PWR?
-U 1 1 5CC2E1EC
-P 2700 7250
-AR Path="/5CC2E1EC" Ref="#PWR?"  Part="1" 
-AR Path="/5CB87033/5CC2E1EC" Ref="#PWR?"  Part="1" 
-AR Path="/5CB00088/5CC2E1EC" Ref="#PWR07"  Part="1" 
-F 0 "#PWR07" H 2700 7100 50  0001 C CNN
-F 1 "+5V" H 2715 7423 50  0000 C CNN
-F 2 "" H 2700 7250 50  0001 C CNN
-F 3 "" H 2700 7250 50  0001 C CNN
-	1    2700 7250
-	1    0    0    -1  
-$EndComp
 Connection ~ 2700 8250
 Wire Wire Line
 	2700 8350 2700 8250
@@ -2655,4 +2637,35 @@ F 3 "~" H 10700 3300 50  0001 C CNN
 	1    10700 3300
 	0    1    1    0   
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J7
+U 1 1 5CA30E81
+P 15450 8950
+F 0 "J7" H 15530 8992 50  0000 L CNN
+F 1 "Conn_01x03" H 15530 8901 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 15450 8950 50  0001 C CNN
+F 3 "~" H 15450 8950 50  0001 C CNN
+	1    15450 8950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15250 8850 14550 8850
+Wire Wire Line
+	15250 8950 14550 8950
+Wire Wire Line
+	15250 9050 14550 9050
+Text Label 14550 8850 0    50   ~ 0
+READ_CMD
+Text Label 14550 8950 0    50   ~ 0
+CURRENT_SENSOR
+Text Label 14550 9050 0    50   ~ 0
+BATT_VOLTAGE
+Wire Wire Line
+	14350 2100 14350 2600
+Wire Wire Line
+	2700 7050 2700 7300
+Text Label 4700 4950 0    50   ~ 0
+3V3
+Text Label 2700 7050 0    50   ~ 0
+3V3
 $EndSCHEMATC
