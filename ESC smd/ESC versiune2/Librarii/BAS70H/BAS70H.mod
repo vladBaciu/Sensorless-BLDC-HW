@@ -1,0 +1,63 @@
+PCBNEW-LibModule-V1  
+# encoding utf-8
+Units mm
+$INDEX
+SOD123F
+$EndINDEX
+$MODULE SOD123F
+Po 0 0 0 15 00000000 00000000 ~~
+Li SOD123F
+Cd <li><b>SOD123F</b><hr><ul><li>Plastic surface-mounted package; 2 leads<li><u>JEDEC</u>: --<li><u>IEC</u>: --<li><u>JEITA</u>: --</ul>
+Sc 00000000
+At SMD
+Op 0 0 0
+.SolderMask 0
+.SolderPaste 0
+T0 5.00659 -0.991305 0.788441 0.788441 0 0.05 N V 21 "SOD123F"
+T1 5.50274 0.50025 0.787795 0.787795 0 0.05 N V 21 "VAL**"
+DS -1.3 -0.8 1.3 -0.8 0.127 27
+DS 1.3 -0.8 1.3 0.8 0.127 27
+DS 1.3 0.8 -1.3 0.8 0.127 27
+DS -1.3 0.8 -1.3 -0.8 0.127 27
+DS -1.3 0.8 1.3 0.8 0.127 21
+DS -1.3 -0.8 1.3 -0.8 0.127 21
+DP 0 0 0 0 4 0 19
+Dl -1.9526 -0.55
+Dl -0.85 -0.55
+Dl -0.85 0.550734
+Dl -1.9526 0.550734
+DP 0 0 0 0 4 0 19
+Dl 0.850975 -0.55
+Dl 1.95 -0.55
+Dl 1.95 0.550631
+Dl 0.850975 0.550631
+DP 0 0 0 0 4 0 27
+Dl 1.30156 -0.3
+Dl 1.75 -0.3
+Dl 1.75 0.300359
+Dl 1.30156 0.300359
+DP 0 0 0 0 4 0 27
+Dl -1.3 0.300571
+Dl -1.75333 0.300571
+Dl -1.75333 -0.3
+Dl -1.3 -0.3
+DP 0 0 0 0 4 0 27
+Dl -1.30123 -0.8
+Dl -0.5 -0.8
+Dl -0.5 0.800756
+Dl -1.30123 0.800756
+$PAD
+Sh "1" R 1.2 1.2 0 0 0
+At SMD N 00888000
+.SolderMask 0
+Ne 0 ""
+Po -1.4 0
+$EndPAD
+$PAD
+Sh "2" R 1.2 1.2 0 0 0
+At SMD N 00888000
+.SolderMask 0
+Ne 0 ""
+Po 1.4 0
+$EndPAD
+$EndMODULE SOD123F

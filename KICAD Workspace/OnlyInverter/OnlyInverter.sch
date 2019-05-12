@@ -141,22 +141,9 @@ $EndComp
 Wire Wire Line
 	2350 9800 2850 9800
 Wire Wire Line
-	2850 9800 2850 9700
-Wire Wire Line
 	1500 10000 2050 10000
 Wire Wire Line
 	2350 9800 2350 9700
-$Comp
-L Transistor_FET:IRF3205 Q2
-U 1 1 5CA00EDF
-P 2850 9500
-F 0 "Q2" V 3193 9500 50  0000 C CNN
-F 1 "IRF9530" V 3102 9500 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3100 9425 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irf3205.pdf" H 2850 9500 50  0001 L CNN
-	1    2850 9500
-	0    -1   -1   0   
-$EndComp
 Connection ~ 2350 9800
 $Comp
 L Transistor_BJT:BC547 Q1
@@ -1411,8 +1398,6 @@ Wire Wire Line
 	8200 3000 8200 3250
 Wire Wire Line
 	9900 3750 9900 3800
-Wire Wire Line
-	9900 3550 9900 3750
 Connection ~ 9900 3750
 Wire Wire Line
 	9550 3750 9900 3750
@@ -1427,7 +1412,7 @@ P 9550 3600
 AR Path="/5CB0A45B" Ref="R14"  Part="1" 
 AR Path="/5CB00088/5CB0A45B" Ref="R?"  Part="1" 
 F 0 "R14" H 9620 3646 50  0000 L CNN
-F 1 "150k" H 9620 3555 50  0000 L CNN
+F 1 "10K" H 9620 3555 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 9480 3600 50  0001 C CNN
 F 3 "~" H 9550 3600 50  0001 C CNN
 	1    9550 3600
@@ -1451,7 +1436,7 @@ P 9550 5450
 AR Path="/5CB0A44D" Ref="R15"  Part="1" 
 AR Path="/5CB00088/5CB0A44D" Ref="R?"  Part="1" 
 F 0 "R15" H 9620 5496 50  0000 L CNN
-F 1 "150k" H 9620 5405 50  0000 L CNN
+F 1 "10K" H 9620 5405 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 9480 5450 50  0001 C CNN
 F 3 "~" H 9550 5450 50  0001 C CNN
 	1    9550 5450
@@ -1472,7 +1457,7 @@ P 9500 7450
 AR Path="/5CB0A440" Ref="R13"  Part="1" 
 AR Path="/5CB00088/5CB0A440" Ref="R?"  Part="1" 
 F 0 "R13" H 9570 7496 50  0000 L CNN
-F 1 "150k" H 9570 7405 50  0000 L CNN
+F 1 "10K" H 9570 7405 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 9430 7450 50  0001 C CNN
 F 3 "~" H 9500 7450 50  0001 C CNN
 	1    9500 7450
@@ -1483,7 +1468,7 @@ Wire Wire Line
 Wire Wire Line
 	7350 7100 6950 7100
 Wire Wire Line
-	9900 2450 9900 2050
+	9900 2450 9900 2400
 Text Notes 5550 1500 0    157  ~ 31
 Three phase inverter 
 Wire Notes Line
@@ -1508,9 +1493,9 @@ Wire Wire Line
 Wire Wire Line
 	6950 5000 7350 5000
 Wire Wire Line
-	9900 6300 9900 6150
+	9900 6300 9900 6250
 Wire Wire Line
-	9900 4300 9900 4150
+	9900 4300 9900 4200
 Wire Wire Line
 	8400 6100 8400 6550
 Wire Wire Line
@@ -1534,7 +1519,7 @@ F 3 "~" H 8400 6700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9900 6900 9900 6700
+	9900 6900 9900 6800
 Connection ~ 9900 6900
 Wire Wire Line
 	9750 6900 9900 6900
@@ -1601,9 +1586,9 @@ Wire Wire Line
 Wire Wire Line
 	8850 7550 8650 7550
 Wire Wire Line
-	9600 7000 9600 6500
+	9400 7000 9400 6500
 Wire Wire Line
-	9250 7000 9600 7000
+	9250 7000 9400 7000
 Wire Wire Line
 	9250 6650 9250 7000
 Wire Wire Line
@@ -1633,8 +1618,6 @@ F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 9000 6650 50  
 	1    9000 6650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9900 7000 9900 6900
 Connection ~ 9250 7200
 Wire Wire Line
 	9150 7200 9250 7200
@@ -1726,10 +1709,8 @@ F 3 "~" H 8350 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9900 4900 9900 4700
+	9900 4900 9900 4800
 Connection ~ 9900 4900
-Wire Wire Line
-	9750 4900 9900 4900
 Wire Wire Line
 	9750 5100 9750 4900
 Wire Wire Line
@@ -1786,9 +1767,9 @@ Wire Wire Line
 Wire Wire Line
 	8850 5550 8650 5550
 Wire Wire Line
-	9600 5000 9600 4500
+	9400 5000 9400 4500
 Wire Wire Line
-	9250 5000 9600 5000
+	9250 5000 9400 5000
 Wire Wire Line
 	9250 4650 9250 5000
 Wire Wire Line
@@ -1819,7 +1800,7 @@ F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 9000 4650 50  
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9900 5000 9900 4900
+	9900 5000 9900 4950
 Connection ~ 9250 5200
 Wire Wire Line
 	9150 5200 9250 5200
@@ -1914,10 +1895,8 @@ Connection ~ 8200 2250
 Wire Wire Line
 	8400 2250 8200 2250
 Wire Wire Line
-	9900 3050 9900 2850
+	9900 3050 9900 2900
 Connection ~ 9900 3050
-Wire Wire Line
-	9750 3050 9900 3050
 Wire Wire Line
 	9750 3250 9750 3050
 Wire Wire Line
@@ -1983,9 +1962,7 @@ Wire Wire Line
 Wire Wire Line
 	8850 3700 8650 3700
 Wire Wire Line
-	9600 3150 9600 2650
-Wire Wire Line
-	9250 3150 9600 3150
+	9250 3150 9400 3150
 Wire Wire Line
 	9250 2800 9250 3150
 Wire Wire Line
@@ -2016,7 +1993,7 @@ F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 9000 2800 50  
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9900 3150 9900 3050
+	9900 3150 9900 3100
 Connection ~ 9250 3350
 Wire Wire Line
 	9150 3350 9250 3350
@@ -2031,19 +2008,6 @@ F 1 "Q_NMOS_DGS" H 10005 3305 50  0001 L CNN
 F 2 "Package_TO_SOT_THT:FQP85N06" H 10000 3450 50  0001 C CNN
 F 3 "~" H 9800 3350 50  0001 C CNN
 	1    9800 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_NMOS_DGS FQP85N1
-U 1 1 5CB0A2F5
-P 9800 2650
-AR Path="/5CB0A2F5" Ref="FQP85N1"  Part="1" 
-AR Path="/5CB00088/5CB0A2F5" Ref="FQP85N?"  Part="1" 
-F 0 "FQP85N1" H 10005 2650 50  0000 L CNN
-F 1 "Q_NMOS_DGS" H 10005 2605 50  0001 L CNN
-F 2 "Package_TO_SOT_THT:FQP85N06" H 10000 2750 50  0001 C CNN
-F 3 "~" H 9800 2650 50  0001 C CNN
-	1    9800 2650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2235,4 +2199,250 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393-n.pdf" H 14400 4900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	13400 5000 14100 5000
+$Comp
+L Device:Q_NMOS_DGS FQP85N1
+U 1 1 5CB0A2F5
+P 9800 2650
+AR Path="/5CB0A2F5" Ref="FQP85N1"  Part="1" 
+AR Path="/5CB00088/5CB0A2F5" Ref="FQP85N?"  Part="1" 
+F 0 "FQP85N1" H 10005 2650 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 10005 2605 50  0001 L CNN
+F 2 "Package_TO_SOT_THT:FQP85N06" H 10000 2750 50  0001 C CNN
+F 3 "~" H 9800 2650 50  0001 C CNN
+	1    9800 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 3150 9400 2650
+$Comp
+L Device:R R25
+U 1 1 5CCD9C77
+P 9550 2900
+AR Path="/5CCD9C77" Ref="R25"  Part="1" 
+AR Path="/5CB00088/5CCD9C77" Ref="R?"  Part="1" 
+F 0 "R25" H 9620 2946 50  0000 L CNN
+F 1 "10K" H 9620 2855 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 9480 2900 50  0001 C CNN
+F 3 "~" H 9550 2900 50  0001 C CNN
+	1    9550 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 2650 9550 2650
+Wire Wire Line
+	9550 2750 9550 2650
+Connection ~ 9550 2650
+Wire Wire Line
+	9550 2650 9600 2650
+Wire Wire Line
+	9550 3050 9750 3050
+Connection ~ 9750 3050
+Wire Wire Line
+	9750 3050 9900 3050
+$Comp
+L Device:R R26
+U 1 1 5CDF0E01
+P 9550 4750
+AR Path="/5CDF0E01" Ref="R26"  Part="1" 
+AR Path="/5CB00088/5CDF0E01" Ref="R?"  Part="1" 
+F 0 "R26" H 9620 4796 50  0000 L CNN
+F 1 "10K" H 9620 4705 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 9480 4750 50  0001 C CNN
+F 3 "~" H 9550 4750 50  0001 C CNN
+	1    9550 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 4500 9550 4500
+Wire Wire Line
+	9550 4900 9750 4900
+Connection ~ 9750 4900
+Wire Wire Line
+	9750 4900 9900 4900
+Wire Wire Line
+	9550 4600 9550 4500
+Connection ~ 9550 4500
+Wire Wire Line
+	9550 4500 9600 4500
+Wire Wire Line
+	9400 6500 9550 6500
+$Comp
+L Device:R R27
+U 1 1 5CF2FCB6
+P 9550 6750
+AR Path="/5CF2FCB6" Ref="R27"  Part="1" 
+AR Path="/5CB00088/5CF2FCB6" Ref="R?"  Part="1" 
+F 0 "R27" H 9620 6796 50  0000 L CNN
+F 1 "10K" H 9620 6705 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 9480 6750 50  0001 C CNN
+F 3 "~" H 9550 6750 50  0001 C CNN
+	1    9550 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 6900 9550 6900
+Connection ~ 9750 6900
+Wire Wire Line
+	9550 6600 9550 6500
+Connection ~ 9550 6500
+Wire Wire Line
+	9550 6500 9600 6500
+$Comp
+L Diode:1N5819 D11
+U 1 1 5CF91E12
+P 10400 2650
+F 0 "D11" H 10400 2866 50  0000 C CNN
+F 1 "1N5819" H 10400 2775 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10400 2475 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 10400 2650 50  0001 C CNN
+	1    10400 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9900 2400 10400 2400
+Wire Wire Line
+	10400 2400 10400 2500
+Connection ~ 9900 2400
+Wire Wire Line
+	9900 2400 9900 2050
+Wire Wire Line
+	9900 2900 10400 2900
+Wire Wire Line
+	10400 2900 10400 2800
+Connection ~ 9900 2900
+Wire Wire Line
+	9900 2900 9900 2850
+$Comp
+L Diode:1N5819 D12
+U 1 1 5D0E273C
+P 10400 3500
+F 0 "D12" H 10400 3716 50  0000 C CNN
+F 1 "1N5819" H 10400 3625 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10400 3325 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 10400 3500 50  0001 C CNN
+	1    10400 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10400 3100 9900 3100
+Wire Wire Line
+	10400 3100 10400 3350
+Connection ~ 9900 3100
+Wire Wire Line
+	9900 3100 9900 3050
+$Comp
+L Diode:1N5819 D13
+U 1 1 5D149940
+P 10400 4550
+F 0 "D13" H 10400 4766 50  0000 C CNN
+F 1 "1N5819" H 10400 4675 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10400 4375 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 10400 4550 50  0001 C CNN
+	1    10400 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9900 4200 10400 4200
+Wire Wire Line
+	10400 4200 10400 4400
+Connection ~ 9900 4200
+Wire Wire Line
+	9900 4200 9900 4150
+Wire Wire Line
+	10400 4700 10400 4800
+Wire Wire Line
+	10400 4800 9900 4800
+Connection ~ 9900 4800
+Wire Wire Line
+	9900 4800 9900 4700
+$Comp
+L Diode:1N5819 D14
+U 1 1 5D1D6A81
+P 10400 5250
+F 0 "D14" H 10400 5466 50  0000 C CNN
+F 1 "1N5819" H 10400 5375 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10400 5075 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 10400 5250 50  0001 C CNN
+	1    10400 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10400 4950 9900 4950
+Wire Wire Line
+	10400 4950 10400 5100
+Connection ~ 9900 4950
+Wire Wire Line
+	9900 4950 9900 4900
+Wire Wire Line
+	10400 5400 10400 5600
+Wire Wire Line
+	10400 5600 9900 5600
+$Comp
+L Diode:1N5819 D15
+U 1 1 5D243ADD
+P 10400 6500
+F 0 "D15" V 10354 6579 50  0000 L CNN
+F 1 "1N5819" V 10445 6579 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10400 6325 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 10400 6500 50  0001 C CNN
+	1    10400 6500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10400 6250 10400 6350
+Wire Wire Line
+	10400 6250 9900 6250
+Connection ~ 9900 6250
+Wire Wire Line
+	9900 6250 9900 6150
+Wire Wire Line
+	10400 6650 10400 6800
+Wire Wire Line
+	10400 6800 9900 6800
+Connection ~ 9900 6800
+Wire Wire Line
+	9900 6800 9900 6700
+$Comp
+L Diode:1N5819 D16
+U 1 1 5D2B3057
+P 10400 7300
+F 0 "D16" H 10400 7516 50  0000 C CNN
+F 1 "1N5819" H 10400 7425 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10400 7125 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 10400 7300 50  0001 C CNN
+	1    10400 7300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10400 6950 9900 6950
+Wire Wire Line
+	9900 6900 9900 6950
+Wire Wire Line
+	10400 6950 10400 7150
+Connection ~ 9900 6950
+Wire Wire Line
+	9900 6950 9900 7000
+Wire Wire Line
+	9900 7600 10400 7600
+Wire Wire Line
+	10400 7600 10400 7450
+Wire Wire Line
+	9900 3550 9900 3750
+Wire Wire Line
+	9900 3750 10400 3750
+Wire Wire Line
+	10400 3750 10400 3650
+$Comp
+L Transistor_FET:IRF9540N Q2
+U 1 1 5D39BC24
+P 2850 9500
+F 0 "Q2" V 3193 9500 50  0000 C CNN
+F 1 "IRF9530" V 3102 9500 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3050 9425 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf9540n.pdf" H 2850 9500 50  0001 L CNN
+	1    2850 9500
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2850 9700 2850 9800
 $EndSCHEMATC
