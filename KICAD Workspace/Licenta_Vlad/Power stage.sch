@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:Power stage-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -373,7 +374,7 @@ Wire Notes Line
 Wire Notes Line
 	1000 1250 5750 1250
 Text Notes 1050 1250 0    197  ~ 39
-12V Buck Converter 3A
+12V Buck Converter BOARD
 Wire Notes Line
 	1000 2700 5750 2700
 Wire Notes Line
@@ -392,7 +393,7 @@ Connection ~ 2000 4000
 Wire Wire Line
 	1450 3600 2000 3600
 Text Notes 950  3250 0    197  ~ 39
-12V Buck Converter 0.5A
+12V Buck Converter BOOSTRAP\n
 $Comp
 L Regulator_Linear:LP2950-3.3_TO92 U8
 U 1 1 5C8E858B

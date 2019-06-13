@@ -836,7 +836,7 @@ Wire Wire Line
 	5350 5600 5050 5600
 Wire Wire Line
 	5350 5700 5050 5700
-Text Label 5050 5500 0    50   ~ 0
+Text Label 5050 5700 0    50   ~ 0
 GND
 Wire Wire Line
 	1500 6000 750  6000
@@ -846,7 +846,7 @@ Text Label 750  5800 0    50   ~ 0
 EXT_4
 Text Label 750  6000 0    50   ~ 0
 EXT_3
-Text Label 5050 5700 0    50   ~ 0
+Text Label 5050 5500 0    50   ~ 0
 EXT_3
 Text Label 5050 5600 0    50   ~ 0
 EXT_4

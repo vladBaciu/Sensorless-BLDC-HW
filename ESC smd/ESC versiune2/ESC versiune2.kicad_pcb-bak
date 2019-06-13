@@ -2954,7 +2954,7 @@
       (net 27 "Net-(C14-Pad1)"))
     (pad 2 smd roundrect (at 1.4875 0 270) (size 1.425 1.75) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.175439)
       (net 9 /PHASE_C))
-    (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_1206_3216Metric.wrl
+    (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/CP_Elec_5x4.5.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -3026,7 +3026,7 @@
       (net 28 "Net-(C12-Pad1)"))
     (pad 2 smd roundrect (at 1.4875 0 270) (size 1.425 1.75) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.175439)
       (net 16 /PHASE_B))
-    (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_1206_3216Metric.wrl
+    (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/CP_Elec_5x4.5.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -3098,7 +3098,7 @@
       (net 26 "Net-(C13-Pad1)"))
     (pad 2 smd roundrect (at 1.4875 0 270) (size 1.425 1.75) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.175439)
       (net 6 /PHASE_A))
-    (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_1206_3216Metric.wrl
+    (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/CP_Elec_5x4.5.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -4686,7 +4686,7 @@
   (segment (start 109.086 84.048) (end 109.086 86.148) (width 1) (layer F.Cu) (net 6))
   (segment (start 109.679 86.741) (end 110.236 86.741) (width 1) (layer F.Cu) (net 6))
   (segment (start 110.236 86.741) (end 109.679 86.741) (width 1) (layer F.Cu) (net 6) (tstamp 5CF81895))
-  (via (at 110.236 86.741) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 6) (status 1000000))
+  (via (at 110.236 86.741) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 6))
   (segment (start 110.236 86.741) (end 110.236 91.567) (width 1) (layer B.Cu) (net 6))
   (segment (start 110.236 91.567) (end 113.792 95.123) (width 1) (layer B.Cu) (net 6))
   (segment (start 113.792 95.123) (end 113.792 95.123) (width 1) (layer B.Cu) (net 6) (tstamp 5CF81E30))

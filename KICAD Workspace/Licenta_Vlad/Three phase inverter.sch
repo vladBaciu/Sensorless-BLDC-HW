@@ -92,10 +92,8 @@ Text Label 8050 3200 0    50   ~ 0
 LIN1
 Text Label 8050 3100 0    50   ~ 0
 HIN1
-Text Label 1950 9950 0    50   ~ 0
+Text Label 1850 9950 0    50   ~ 0
 READ_CMD
-Wire Wire Line
-	2200 9950 1950 9950
 Text Label 5050 9800 0    50   ~ 0
 BATT_VOLTAGE
 Wire Wire Line
@@ -2358,4 +2356,6 @@ Wire Wire Line
 	15600 9450 15600 9600
 Text Label 15600 9350 0    50   ~ 0
 12V_Bootstrap
+Wire Wire Line
+	1850 9950 2200 9950
 $EndSCHEMATC

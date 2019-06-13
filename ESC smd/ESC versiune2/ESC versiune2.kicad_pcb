@@ -4380,7 +4380,7 @@
   (gr_text "SENSORLESS BLDC CONTROLLER" (at 169.418 96.012 90) (layer F.SilkS)
     (effects (font (size 1.5 1) (thickness 0.25)))
   )
-  (gr_text "BACIU VLAD-EUSEBIU\nELECTRONICA APLCIATA\nLICENTA 2019" (at 75.819 126.873) (layer F.SilkS)
+  (gr_text "BACIU VLAD-EUSEBIU\nELECTRONICA APLICATA\nLICENTA 2019" (at 75.819 126.873) (layer F.SilkS)
     (effects (font (size 1.5 1) (thickness 0.25)))
   )
   (gr_line (start 57.023 131.318) (end 172.212 131.318) (layer Edge.Cuts) (width 0.15))

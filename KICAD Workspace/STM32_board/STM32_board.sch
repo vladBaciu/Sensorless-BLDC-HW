@@ -236,7 +236,7 @@ Wire Notes Line
 Wire Notes Line
 	8000 3400 8000 650 
 Text Notes 8000 850  0    118  ~ 24
-CONNECTORS
+OTHER CONNECTORS
 Text Label 750  5200 0    50   ~ 0
 JoystickADC1
 Text Label 750  5400 0    50   ~ 0
@@ -286,97 +286,97 @@ P_CH
 $Comp
 L Connector:Conn_01x16_Female J4
 U 1 1 5C80FA85
-P 7150 5000
-F 0 "J4" H 7177 4976 50  0000 L CNN
-F 1 "LCD interface" H 7177 4885 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x16_P2.54mm_Vertical" H 7150 5000 50  0001 C CNN
-F 3 "~" H 7150 5000 50  0001 C CNN
-	1    7150 5000
+P 7250 3200
+F 0 "J4" H 7277 3176 50  0000 L CNN
+F 1 "LCD interface" H 7277 3085 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x16_P2.54mm_Vertical" H 7250 3200 50  0001 C CNN
+F 3 "~" H 7250 3200 50  0001 C CNN
+	1    7250 3200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6950 4300 5950 4300
+	7050 2500 6050 2500
 Wire Wire Line
-	6950 4400 5950 4400
+	7050 2600 6050 2600
 Wire Wire Line
-	6950 4500 5950 4500
+	7050 2700 6050 2700
 Wire Wire Line
-	6950 4600 5950 4600
+	7050 2800 6050 2800
 Wire Wire Line
-	6950 4800 5950 4800
+	7050 3000 6050 3000
 Wire Wire Line
-	6950 4900 6450 4900
+	7050 3100 6550 3100
 Wire Wire Line
-	6950 5000 6450 5000
+	7050 3200 6550 3200
 Wire Wire Line
-	6950 5100 6450 5100
+	7050 3300 6550 3300
 Wire Wire Line
-	6950 5200 6450 5200
+	7050 3400 6550 3400
 Wire Wire Line
-	6950 5300 5950 5300
+	7050 3500 6050 3500
 Wire Wire Line
-	6950 5400 5950 5400
+	7050 3600 6050 3600
 Wire Wire Line
-	6950 5500 5950 5500
+	7050 3700 6050 3700
 Wire Wire Line
-	6950 5600 5950 5600
+	7050 3800 6050 3800
 Wire Wire Line
-	6950 5800 5950 5800
-Text Label 5950 4300 0    50   ~ 0
+	7050 4000 6050 4000
+Text Label 6050 2500 0    50   ~ 0
 GND
-Text Label 5950 4400 0    50   ~ 0
+Text Label 6050 2600 0    50   ~ 0
 5V
-Text Label 5950 4500 0    50   ~ 0
+Text Label 6050 2700 0    50   ~ 0
 V0
-Text Label 5950 4600 0    50   ~ 0
+Text Label 6050 2800 0    50   ~ 0
 LcdRS
-Text Label 5950 4700 0    50   ~ 0
+Text Label 6050 2900 0    50   ~ 0
 GND
-Text Label 5950 4800 0    50   ~ 0
+Text Label 6050 3000 0    50   ~ 0
 LcdEN
-Text Label 5950 4900 0    50   ~ 0
+Text Label 6050 3100 0    50   ~ 0
 LcdD0
-Text Label 5950 5000 0    50   ~ 0
+Text Label 6050 3200 0    50   ~ 0
 LcdD1
-Text Label 5950 5100 0    50   ~ 0
+Text Label 6050 3300 0    50   ~ 0
 LcdD2
-Text Label 5950 5200 0    50   ~ 0
+Text Label 6050 3400 0    50   ~ 0
 LcdD3
 Wire Wire Line
-	6450 5200 6450 5100
-Connection ~ 6450 5200
+	6550 3400 6550 3300
+Connection ~ 6550 3400
 Wire Wire Line
-	6450 5200 5950 5200
-Connection ~ 6450 5100
+	6550 3400 6050 3400
+Connection ~ 6550 3300
 Wire Wire Line
-	6450 5100 5950 5100
+	6550 3300 6050 3300
 Wire Wire Line
-	6450 5100 6450 5000
-Connection ~ 6450 5000
+	6550 3300 6550 3200
+Connection ~ 6550 3200
 Wire Wire Line
-	6450 5000 5950 5000
-Connection ~ 6450 4900
+	6550 3200 6050 3200
+Connection ~ 6550 3100
 Wire Wire Line
-	5900 4700 5900 4900
+	6000 2900 6000 3100
 Wire Wire Line
-	5900 4700 6950 4700
+	6000 2900 7050 2900
 Wire Wire Line
-	5900 4900 6450 4900
+	6000 3100 6550 3100
 Wire Wire Line
-	6450 4900 6450 5000
-Text Label 5950 5300 0    50   ~ 0
+	6550 3100 6550 3200
+Text Label 6050 3500 0    50   ~ 0
 LcdD4
-Text Label 5950 5400 0    50   ~ 0
+Text Label 6050 3600 0    50   ~ 0
 LcdD5
-Text Label 5950 5500 0    50   ~ 0
+Text Label 6050 3700 0    50   ~ 0
 LcdD6
-Text Label 5950 5600 0    50   ~ 0
+Text Label 6050 3800 0    50   ~ 0
 LcdD7
 Wire Wire Line
-	6950 5700 5950 5700
-Text Label 5950 5700 0    50   ~ 0
+	7050 3900 6050 3900
+Text Label 6050 3900 0    50   ~ 0
 5V
-Text Label 5950 5800 0    50   ~ 0
+Text Label 6050 4000 0    50   ~ 0
 GND
 $Comp
 L Device:LED D1
@@ -579,25 +579,25 @@ Wire Wire Line
 $Comp
 L Device:R_POT RV1
 U 1 1 5C8864A7
-P 6550 3750
-F 0 "RV1" H 6480 3796 50  0000 R CNN
-F 1 "R_POT" H 6480 3705 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Alps_RK163_Single_Horizontal" H 6550 3750 50  0001 C CNN
-F 3 "~" H 6550 3750 50  0001 C CNN
-	1    6550 3750
+P 6750 1400
+F 0 "RV1" H 6680 1446 50  0000 R CNN
+F 1 "R_POT" H 6680 1355 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK163_Single_Horizontal" H 6750 1400 50  0001 C CNN
+F 3 "~" H 6750 1400 50  0001 C CNN
+	1    6750 1400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6550 3600 6550 3350
+	6750 1250 6750 1000
 Wire Wire Line
-	6550 3900 6550 4050
-Text Label 6550 3350 1    50   ~ 0
+	6750 1550 6750 1700
+Text Label 6750 1000 1    50   ~ 0
 5V
-Text Label 6550 4050 3    50   ~ 0
+Text Label 6750 1700 3    50   ~ 0
 GND
 Wire Wire Line
-	6700 3750 7050 3750
-Text Label 7050 3750 0    50   ~ 0
+	6900 1400 7250 1400
+Text Label 7250 1400 0    50   ~ 0
 V0
 $Comp
 L Connector:Conn_01x05_Male J7
@@ -658,9 +658,9 @@ Wire Wire Line
 	1500 2400 700  2400
 Text Label 700  2300 0    50   ~ 0
 EXT_1
-Text Label 5000 6100 0    50   ~ 0
+Text Label 6050 4950 0    50   ~ 0
 EXT_1
-Text Label 5000 6000 0    50   ~ 0
+Text Label 6050 4850 0    50   ~ 0
 EXT_2
 Wire Wire Line
 	3100 4500 3750 4500
@@ -677,12 +677,12 @@ EXT_7
 $Comp
 L Connector:Conn_01x06_Female J9
 U 1 1 5C8E1B7B
-P 5850 7300
-F 0 "J9" H 5878 7276 50  0000 L CNN
-F 1 "UART module" H 5878 7185 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 5850 7300 50  0001 C CNN
-F 3 "~" H 5850 7300 50  0001 C CNN
-	1    5850 7300
+P 6150 7050
+F 0 "J9" H 6178 7026 50  0000 L CNN
+F 1 "UART module" H 6178 6935 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 6150 7050 50  0001 C CNN
+F 3 "~" H 6150 7050 50  0001 C CNN
+	1    6150 7050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -694,23 +694,23 @@ UART1_TX
 Text Label 750  6300 0    50   ~ 0
 UART2_RX
 Wire Wire Line
-	5650 7100 5100 7100
+	5950 6850 5400 6850
 Wire Wire Line
-	5650 7200 5100 7200
+	5950 6950 5400 6950
 Wire Wire Line
-	5650 7300 5100 7300
+	5950 7050 5400 7050
 Wire Wire Line
-	5650 7400 5100 7400
+	5950 7150 5400 7150
 Wire Wire Line
-	5650 7500 5100 7500
-Text Label 5100 7300 0    50   ~ 0
+	5950 7250 5400 7250
+Text Label 5400 7050 0    50   ~ 0
 UART1_TX
-Text Label 5100 7200 0    50   ~ 0
+Text Label 5400 6950 0    50   ~ 0
 UART2_RX
-Text Label 5100 7600 0    50   ~ 0
+Text Label 5400 7350 0    50   ~ 0
 GND
 Wire Wire Line
-	5650 7600 5100 7600
+	5950 7350 5400 7350
 Wire Wire Line
 	3100 1400 3400 1400
 Text Label 3400 1400 0    50   ~ 0
@@ -718,44 +718,44 @@ Text Label 3400 1400 0    50   ~ 0
 $Comp
 L Device:R R4
 U 1 1 5C892BB2
-P 6550 2550
-F 0 "R4" H 6620 2596 50  0000 L CNN
-F 1 "R" H 6620 2505 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 6480 2550 50  0001 C CNN
-F 3 "~" H 6550 2550 50  0001 C CNN
-	1    6550 2550
+P 7400 1400
+F 0 "R4" H 7470 1446 50  0000 L CNN
+F 1 "R" H 7470 1355 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 7330 1400 50  0001 C CNN
+F 3 "~" H 7400 1400 50  0001 C CNN
+	1    7400 1400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6550 2700 6550 3000
+	7400 1550 7400 1850
 Wire Wire Line
-	6550 2050 6550 2400
-Text Label 6550 2050 0    50   ~ 0
+	7400 900  7400 1250
+Text Label 7400 900  0    50   ~ 0
 3V
-Text Label 6550 3000 0    50   ~ 0
+Text Label 7400 1850 0    50   ~ 0
 JoystickButton
 $Comp
 L Connector:Conn_01x03_Male J10
 U 1 1 5C8E970C
-P 6150 6100
-F 0 "J10" H 6123 6030 50  0000 R CNN
-F 1 "Low side connector" H 6123 6121 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 6150 6100 50  0001 C CNN
-F 3 "~" H 6150 6100 50  0001 C CNN
-	1    6150 6100
+P 7200 4950
+F 0 "J10" H 7173 4880 50  0000 R CNN
+F 1 "Low side connector" H 7173 4971 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7200 4950 50  0001 C CNN
+F 3 "~" H 7200 4950 50  0001 C CNN
+	1    7200 4950
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5000 6000 5950 6000
+	6050 4850 7000 4850
 Wire Wire Line
-	5000 6100 5950 6100
+	6050 4950 7000 4950
 Wire Wire Line
-	5950 6200 5000 6200
+	7000 5050 6050 5050
 Wire Wire Line
 	1500 2200 700  2200
 Text Label 700  2200 0    50   ~ 0
 EXT_0
-Text Label 5000 6200 0    50   ~ 0
+Text Label 6050 5050 0    50   ~ 0
 EXT_0
 Text Label 700  2400 0    50   ~ 0
 EXT_2
@@ -799,44 +799,44 @@ READ_BATTERY
 $Comp
 L Connector:Conn_01x03_Male J8
 U 1 1 5C8F395E
-P 6150 6550
-F 0 "J8" H 6123 6480 50  0000 R CNN
-F 1 "Output pins" H 6123 6571 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 6150 6550 50  0001 C CNN
-F 3 "~" H 6150 6550 50  0001 C CNN
-	1    6150 6550
+P 7200 5400
+F 0 "J8" H 7173 5330 50  0000 R CNN
+F 1 "Output pins" H 7173 5421 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7200 5400 50  0001 C CNN
+F 3 "~" H 7200 5400 50  0001 C CNN
+	1    7200 5400
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5950 6450 5000 6450
+	7000 5300 6050 5300
 Wire Wire Line
-	5950 6550 5000 6550
+	7000 5400 6050 5400
 Wire Wire Line
-	5950 6650 5000 6650
-Text Label 5000 6650 0    50   ~ 0
+	7000 5500 6050 5500
+Text Label 6050 5500 0    50   ~ 0
 EXT_5
-Text Label 5000 6550 0    50   ~ 0
+Text Label 6050 5400 0    50   ~ 0
 EXT_6
-Text Label 5000 6450 0    50   ~ 0
+Text Label 6050 5300 0    50   ~ 0
 EXT_7
 $Comp
 L Connector:Conn_01x03_Male J11
 U 1 1 5C914D72
-P 5550 5600
-F 0 "J11" H 5523 5530 50  0000 R CNN
-F 1 "Output pins" H 5523 5621 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 5550 5600 50  0001 C CNN
-F 3 "~" H 5550 5600 50  0001 C CNN
-	1    5550 5600
+P 7200 5750
+F 0 "J11" H 7173 5680 50  0000 R CNN
+F 1 "Output pins" H 7173 5771 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7200 5750 50  0001 C CNN
+F 3 "~" H 7200 5750 50  0001 C CNN
+	1    7200 5750
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5350 5500 5050 5500
+	7000 5650 6700 5650
 Wire Wire Line
-	5350 5600 5050 5600
+	7000 5750 6700 5750
 Wire Wire Line
-	5350 5700 5050 5700
-Text Label 5050 5700 0    50   ~ 0
+	7000 5850 6700 5850
+Text Label 6700 5850 0    50   ~ 0
 GND
 Wire Wire Line
 	1500 6000 750  6000
@@ -846,8 +846,60 @@ Text Label 750  5800 0    50   ~ 0
 EXT_4
 Text Label 750  6000 0    50   ~ 0
 EXT_3
-Text Label 5050 5500 0    50   ~ 0
+Text Label 6700 5650 0    50   ~ 0
 EXT_3
-Text Label 5050 5600 0    50   ~ 0
+Text Label 6700 5750 0    50   ~ 0
 EXT_4
+Wire Notes Line
+	6750 6650 6750 7450
+Wire Notes Line
+	6750 7450 5000 7450
+Wire Notes Line
+	5000 7450 5000 6650
+Wire Notes Line
+	5000 6650 6750 6650
+Text Notes 5000 6600 0    89   ~ 18
+UART MODULE CONNECTOR
+Wire Notes Line
+	5850 4700 7500 4700
+Wire Notes Line
+	7500 4700 7500 5950
+Wire Notes Line
+	7500 5950 5850 5950
+Wire Notes Line
+	5850 5950 5850 4700
+Wire Notes Line
+	5850 2350 7550 2350
+Wire Notes Line
+	7550 2350 7550 4150
+Wire Notes Line
+	7550 4150 5850 4150
+Wire Notes Line
+	5850 4150 5850 2350
+Text Notes 5750 4700 0    89   ~ 18
+CONNECTOR EXT_INTERRUPTS
+Text Notes 6100 2300 0    89   ~ 18
+LCD CONNECTOR
+Wire Notes Line
+	550  900  550  7250
+Wire Notes Line
+	550  7250 3600 7250
+Wire Notes Line
+	3600 7250 3600 850 
+Wire Notes Line
+	3600 850  550  850 
+Text Notes 650  800  0    89   ~ 18
+STM32F4 BOARD CONNECTOR
+Text Notes 4800 800  0    89   ~ 18
+CD4050BE
+Wire Notes Line
+	3850 2800 5550 2800
+Wire Notes Line
+	5550 2800 5550 4100
+Wire Notes Line
+	5550 4100 3850 4100
+Wire Notes Line
+	3850 4100 3850 2800
+Text Notes 4050 4050 0    89   ~ 18
+INDICATOR LEDS\n
 $EndSCHEMATC
